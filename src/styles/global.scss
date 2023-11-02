@@ -1,0 +1,25 @@
+@import "variables";
+
+@font-face {
+  font-family: "Sora";
+  src: url("./fonts/Sora-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body.light-mode {
+  background-color: $background-light;
+  color: $primary-light;
+  font-family: "Sora", sans-serif;
+}
+
+// body.dark-mode {
+//   background-color: $background-dark;
+//   color: $primary-dark;
+//   font-family: "Sora", sans-serif;
+// }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
