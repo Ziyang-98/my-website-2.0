@@ -2,15 +2,35 @@
 
 @font-face {
   font-family: "Sora";
-  src: url("./fonts/Sora-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Sora-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-body.light-mode {
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  transform: scale(1);
+  background-attachment: scroll;
+  background-image: $bg-svg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+body {
   background-color: $background-light;
   color: $primary-light;
   font-family: "Sora", sans-serif;
+  -webkit-text-size-adjust: none;
 }
 
 // body.dark-mode {
