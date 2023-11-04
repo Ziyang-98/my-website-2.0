@@ -1,11 +1,5 @@
 @import "variables";
-
-@font-face {
-  font-family: "Sora";
-  src: url("../assets/fonts/Sora-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+@import "fonts";
 
 body::before {
   content: "";

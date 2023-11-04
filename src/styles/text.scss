@@ -1,0 +1,21 @@
+@mixin heading {
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@mixin title {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@mixin subtitle {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+@mixin regular {
+  font-size: 16px;
+  line-height: 1.5;
+}
