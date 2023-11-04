@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../styles/theme";
 @import "../../styles/fonts";
 
 .homeSection {
@@ -23,7 +23,27 @@
   color: $text-light;
 }
 
-.subtitle {
-  font-size: 2em;
-  color: $subtext-light;
+.button {
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  letter-spacing: 4px;
+
+  display: inline-block;
+  padding: 25px 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: $secondary-light;
+  color: $primary-foreground-light;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+
+  &:hover {
+    background-color: $primary-light;
+  }
+  // background: $secondary-light;
+  // border-color: $secondary-light;
+  // box-shadow: none;
+  // color: $primary-foreground-light;
+  // border-radius: 25px;
 }

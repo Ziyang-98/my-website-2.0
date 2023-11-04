@@ -6,6 +6,9 @@ export default function Home() {
     <div className={styles.homeSection}>
       <text className={styles.name}>LIM ZI YANG</text>
       <h1 className={styles.title}>Welcome</h1>
+      <button className={styles.button}>
+        <text>Click Me!</text>
+      </button>
     </div>
   );
 }
