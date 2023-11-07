@@ -1,0 +1,44 @@
+@import "../../styles/theme";
+
+.aboutSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+}
+
+.aboutMeHolder {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+
+.divider {
+  height: 5px;
+  width: 60px;
+  background: $primary-light;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 3.5em;
+  color: $text-light;
+}
+
+.imageHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.avatar {
+  width: 400px; /* Adjust the size as needed */
+  height: 400px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the entire circle */
+}
