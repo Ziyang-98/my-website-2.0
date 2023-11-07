@@ -11,10 +11,10 @@ export default function Home({ scrollIntoAboutSection }) {
 
   return (
     <div className={styles.homeSection}>
-      <text className={styles.name}>LIM ZI YANG</text>
+      <span className={styles.name}>LIM ZI YANG</span>
       <h1 className={styles.title}>Welcome</h1>
       <button onClick={handleScrollToAbout} className={styles.button}>
-        <text>Click Me!</text>
+        Click Me!
       </button>
     </div>
   );
