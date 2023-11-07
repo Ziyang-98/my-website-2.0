@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./index.module.scss";
 import dp from "assets/images/dp.jpg";
-import { useTiltingAvatar } from "./hooks/use-tilting-avatar";
+import useAnimationAvatar from "./hooks/use-animation-avatar";
 
 export default function About({ aboutSectionRef }) {
-  useTiltingAvatar();
+  const hasTilt = true;
+  const hasSpin = false;
+  useAnimationAvatar(hasTilt, hasSpin);
 
   return (
     <div
