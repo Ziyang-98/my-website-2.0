@@ -25,14 +25,14 @@
 
 .title {
   font-weight: 400;
-  font-size: 3.5em;
+  font-size: $heading-medium;
   color: $text-light;
 }
 
 .aboutMe {
   font-weight: 400;
-  font-size: 1.25em;
-  color: $subtext-light;
+  font-size: $text-medium;
+  color: $gray-text-light;
 }
 
 .avatarHolder {
