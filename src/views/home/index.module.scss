@@ -13,6 +13,7 @@
   font-family: "Sora", sans-serif;
   font-size: $text-large;
   letter-spacing: 5px;
+  color: $accent-light;
 }
 
 .title {
@@ -24,7 +25,7 @@
 .button {
   font-family: "Sora", sans-serif;
   font-size: $text-medium;
-  background-color: $secondary-light;
+  background-color: $primary-light;
   color: $foreground-text-light;
   letter-spacing: 4px;
   display: inline-block;
