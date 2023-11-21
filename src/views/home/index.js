@@ -12,7 +12,11 @@ export default function Home({ scrollIntoAboutSection }) {
   return (
     <div className={styles.homeSection}>
       <span className={styles.name}>LIM ZI YANG</span>
-      <h1 className={styles.title}>Welcome</h1>
+      <span className={styles.title}>
+        <p className={styles.titleText}>
+          I am a <span className={styles.persona} />
+        </p>
+      </span>
       <button onClick={handleScrollToAbout} className={styles.button}>
         Click Me!
       </button>
