@@ -1,0 +1,49 @@
+@import "../../styles/theme";
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-light;
+  color: #fff;
+}
+
+%carousel-indicator-base {
+  height: 3px;
+  width: 50px;
+  margin: 3px;
+  transition: background 0.5s ease;
+}
+
+.carousel-indicator {
+  @extend %carousel-indicator-base;
+  background: $secondary-light;
+}
+
+.carousel-indicator-active {
+  @extend %carousel-indicator-base;
+  background: $accent-light;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  background-color: $secondary-light;
+  color: #fff;
+}

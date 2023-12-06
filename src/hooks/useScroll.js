@@ -1,4 +1,3 @@
-import { smoothScrollTo } from "commons/utils";
 import { useRef } from "react";
 
 export default function useScroll() {
@@ -6,8 +5,7 @@ export default function useScroll() {
   const portfolioSectionRef = useRef(null);
 
   const scrollIntoSection = (sectionRef) => {
-    // smoothScrollTo(sectionRef, 1000);
-    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
   };
 
   const scrollIntoAboutSection = () => {
