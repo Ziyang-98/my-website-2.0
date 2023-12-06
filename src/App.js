@@ -16,8 +16,11 @@ function App() {
     <div className="App">
       <div className={styles.wrapper}>
         <Home scrollIntoAboutSection={scrollIntoAboutSection} />
-        <About aboutSectionRef={aboutSectionRef} />
-        <Portfolio />
+        <About
+          aboutSectionRef={aboutSectionRef}
+          scrollIntoPortfolioSection={scrollIntoPortfolioSection}
+        />
+        <Portfolio portfolioSectionRef={portfolioSectionRef} />
       </div>
     </div>
   );

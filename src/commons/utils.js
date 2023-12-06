@@ -1,5 +1,6 @@
 export function smoothScrollTo(target, duration) {
   const targetPosition = target.getBoundingClientRect().top;
+  console.log(target);
   const startPosition = window.scrollY;
   const distance = targetPosition - startPosition;
   let startTime = null;
