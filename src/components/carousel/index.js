@@ -12,7 +12,7 @@ function CarouselItem({ children, height, width }) {
   );
 }
 
-function CarouselIndicator({ isActive }) {
+function CarouselIndicator({ index, updateIndex, isActive }) {
   return (
     <div
       className={
@@ -20,6 +20,9 @@ function CarouselIndicator({ isActive }) {
           ? styles["carousel-indicator-active"]
           : styles["carousel-indicator"]
       }
+      onClick={() => {
+        updateIndex(index);
+      }}
     />
   );
 }
@@ -44,7 +47,6 @@ function Carousel({ children, width, height }) {
         updateIndex(activeIndex + 1);
       }
     }, 3000);
-
     return () => {
       if (interval) {
         clearInterval(interval);
@@ -58,6 +60,17 @@ function Carousel({ children, width, height }) {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
+      <div className={styles["carousel-indicators"]}>
+        {React.Children.map(children, (child, index) => {
+          return (
+            <CarouselIndicator
+              index={index}
+              updateIndex={updateIndex}
+              isActive={index === activeIndex}
+            />
+          );
+        })}
+      </div>
       <div
         className={styles.inner}
         style={{
@@ -70,34 +83,29 @@ function Carousel({ children, width, height }) {
           return React.cloneElement(child, { height: "100%", width: "100%" });
         })}
       </div>
-      <div className={styles.indicators}>
-        <button
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
+      <div
+        className={styles["carousel-left-btn-holder"]}
+        onClick={() => updateIndex(activeIndex - 1)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className={`${styles["carousel-btn"]}`}
+          viewBox="0 0 8 8"
         >
-          Prev
-        </button>
-        {React.Children.map(children, (child, index) => {
-          return (
-            <CarouselIndicator isActive={index === activeIndex} />
-            // <button
-            //   className={`${index === activeIndex ? styles.active : ""}`}
-            //   onClick={() => {
-            //     updateIndex(index);
-            //   }}
-            // >
-            //   {index + 1}
-            // </button>
-          );
-        })}
-        <button
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
+          <path d="M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z" />
+        </svg>
+      </div>
+      <div
+        className={styles["carousel-right-btn-holder"]}
+        onClick={() => updateIndex(activeIndex + 1)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className={`${styles["carousel-btn"]}`}
+          viewBox="0 0 8 8"
         >
-          Next
-        </button>
+          <path d="M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z" />
+        </svg>
       </div>
     </div>
   );

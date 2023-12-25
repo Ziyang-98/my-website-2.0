@@ -8,25 +8,9 @@
   color: #fff;
 }
 
-%carousel-indicator-base {
-  height: 3px;
-  width: 50px;
-  margin: 3px;
-  transition: background 0.5s ease;
-}
-
-.carousel-indicator {
-  @extend %carousel-indicator-base;
-  background: $secondary-light;
-}
-
-.carousel-indicator-active {
-  @extend %carousel-indicator-base;
-  background: $accent-light;
-}
-
 .carousel {
   overflow: hidden;
+  position: relative;
 }
 
 .inner {
@@ -34,16 +18,68 @@
   transition: transform 0.3s;
 }
 
-.indicators {
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-indicators {
   display: flex;
   justify-content: center;
+  left: 0;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  bottom: 0;
 }
 
-.indicators > button {
-  margin: 5px;
+%carousel-indicator-base {
+  height: 4cap;
+  width: 50px;
+  margin: 3px;
+  transition: background 0.5s ease;
 }
 
-.indicators > button.active {
-  background-color: $secondary-light;
-  color: #fff;
+.carousel-indicator {
+  @extend %carousel-indicator-base;
+  background: $primary-light;
+}
+
+.carousel-indicator-active {
+  @extend %carousel-indicator-base;
+  background: $accent-light;
+}
+
+%carousel-btn-holder {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 15%;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.carousel-left-btn-holder {
+  @extend %carousel-btn-holder;
+  left: 0;
+}
+
+.carousel-right-btn-holder {
+  @extend %carousel-btn-holder;
+  right: 0;
+}
+
+.carousel-btn {
+  height: 40px;
+  height: 40px;
+  fill: #fff;
 }
