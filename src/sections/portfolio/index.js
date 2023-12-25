@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-import { Carousel, CarouselItem } from "components/carousel";
+import { Carousel, CarouselItem } from "./components/carousel";
 
 export default function Portfolio({ portfolioSectionRef }) {
   return (

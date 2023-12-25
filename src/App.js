@@ -1,7 +1,7 @@
 import styles from "./App.module.scss";
-import Home from "views/home";
-import About from "views/about";
-import Portfolio from "views/portfolio";
+import Home from "sections/home";
+import About from "sections/about";
+import Portfolio from "sections/portfolio";
 import useScroll from "hooks/useScroll";
 
 function App() {
