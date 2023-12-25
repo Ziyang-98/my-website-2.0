@@ -3,6 +3,7 @@ import Home from "sections/home";
 import About from "sections/about";
 import Portfolio from "sections/portfolio";
 import useScroll from "hooks/useScroll";
+import Projects from "sections/projects";
 
 function App() {
   const {
@@ -21,6 +22,7 @@ function App() {
           scrollIntoPortfolioSection={scrollIntoPortfolioSection}
         />
         <Portfolio portfolioSectionRef={portfolioSectionRef} />
+        <Projects />
       </div>
     </div>
   );
