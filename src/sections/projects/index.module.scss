@@ -6,8 +6,19 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
+  min-height: 0;
   padding: 2rem 0;
+}
+
+.title-holder {
+  width: 60%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: $heading-medium;
+  color: $text-light;
 }
 
 .grid-container {
