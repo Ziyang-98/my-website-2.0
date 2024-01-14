@@ -1,6 +1,5 @@
 export function smoothScrollTo(target, duration) {
   const targetPosition = target.getBoundingClientRect().top;
-  console.log(target);
   const startPosition = window.scrollY;
   const distance = targetPosition - startPosition;
   let startTime = null;
@@ -25,4 +24,8 @@ export function smoothScrollTo(target, duration) {
   }
 
   requestAnimationFrame(scrollAnimation);
+}
+
+export async function delay(seconds) {
+  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
 }
