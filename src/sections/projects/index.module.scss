@@ -19,12 +19,3 @@
   font-size: $heading-medium;
   color: $text-light;
 }
-
-.grid-container {
-  display: inline-grid;
-  justify-content: center;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 10vh;
-  width: 60%;
-}
