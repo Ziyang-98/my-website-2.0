@@ -87,22 +87,20 @@
 
 @media (max-width: 1700px) {
   .project-card {
-    width: 300px; /* Adjusted width for max-width 768px */
-    border-radius: 18px; /* Adjusted border-radius for max-width 768px */
-  }
-
-  .project-card .project-img-holder {
-    width: 250px; /* Adjusted width for max-width 768px */
-    border-radius: 14px; /* Adjusted border-radius for max-width 768px */
-  }
-
-  .project-card .project-info-holder {
-    top: 200px; /* Adjusted top position for max-width 768px */
-    .project-card-description {
-      font-size: 1rem; /* Adjusted font-size for max-width 768px */
+    width: 300px;
+    border-radius: 15px;
+    .project-img-holder {
+      width: 250px;
+      border-radius: 10px;
     }
-    .project-card-button {
-      font-size: 1.1rem; /* Adjusted font-size for max-width 768px */
+
+    .project-info-holder {
+      .project-card-description {
+        font-size: 0.8rem;
+      }
+      .project-card-button {
+        font-size: 0.9rem;
+      }
     }
   }
 }
