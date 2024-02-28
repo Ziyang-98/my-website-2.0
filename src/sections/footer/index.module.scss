@@ -11,22 +11,35 @@
   margin-top: 20vh;
 }
 
-.social-medias-holder {
+.social-media-holder {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 80%;
+
+  > * + * {
+    margin-top: 0.5rem;
+  }
+}
+
+.social-media-name {
+  color: $secondary-light;
+}
+
+.social-media-icons-holder > * + * {
+  margin-left: 2rem;
 }
 
 .divider {
-  border-top: 2px solid $gray-text-light;
-  width: 100%;
+  border: 1px solid $gray-text-light;
+  width: 90%;
 }
 .copyright-holder {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 20%;
 }
 
 .copyright {
