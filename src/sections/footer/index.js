@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
 import { SocialIcon } from "react-social-icons";
+import { getLastUpdated } from "commons/utils";
 
 const SocialMediaIcon = ({ url }) => {
   return (
@@ -14,6 +15,8 @@ const SocialMediaIcon = ({ url }) => {
     />
   );
 };
+
+const LAST_UPDATED = "2024-02-29T10:16:36.683Z";
 
 export default function Footer() {
   return (
@@ -31,6 +34,7 @@ export default function Footer() {
       <div className={styles.divider} />
       <div className={styles["copyright-holder"]}>
         <h4 className={styles.copyright}>&#169; 2024 All Rights Reserved</h4>
+        <p>Last Updated {getLastUpdated(LAST_UPDATED)}</p>
       </div>
     </div>
   );
