@@ -24,6 +24,7 @@ export default function Footer() {
     <div className={styles["footer-section"]}>
       <div className={styles["social-media-holder"]}>
         <h1 className={styles["social-media-name"]}>Lim Zi Yang</h1>
+        <h4>limziyang8@gmail.com</h4>
         <div className={styles["social-media-icons-holder"]}>
           <SocialMediaIcon url="https://www.facebook.com/lim.ziyang.12" />
           <SocialMediaIcon url="https://www.linkedin.com/in/zi-yang-lim-a2b651188/" />
