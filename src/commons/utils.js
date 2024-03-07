@@ -52,6 +52,6 @@ export function getLastUpdated(date) {
       year: "numeric",
     };
 
-    return date.toLocaleDateString("en-UK", options);
+    return updatedDate.toLocaleDateString("en-UK", options);
   }
 }
