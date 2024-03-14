@@ -1,5 +1,3 @@
-import SchoolIcon from "@mui/icons-material/School";
-
 const CS2030STA = {
   jobTitle: "University Teaching Assistant",
   company: "National University of Singapore",
@@ -11,7 +9,6 @@ const CS2030STA = {
     "Assessed assignments and gave feedback to students' code",
     "Built students' proficiency in Java",
   ],
-  icon: SchoolIcon,
 };
 
 export default CS2030STA;

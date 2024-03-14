@@ -16,8 +16,7 @@ const SocialMediaIcon = ({ url }) => {
   );
 };
 
-const LAST_UPDATED = "2024-02-29T10:16:36.683Z";
-
+const LAST_UPDATED = "2024-03-14T12:33:00.716Z";
 export default function Footer() {
   return (
     // <div className={styles["footer-section"]}>

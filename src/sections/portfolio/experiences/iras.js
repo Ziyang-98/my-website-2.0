@@ -1,5 +1,3 @@
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-
 const IRAS = {
   jobTitle: "Part-time Software Developer",
   company: "Inland Revenue Authority of Singapore",
@@ -10,7 +8,6 @@ const IRAS = {
     "Integrated training data and responses into Google DialogFlow for tax filing feature",
     "Implemented Typescript web hooks with NodeJS to interact with backend",
   ],
-  icon: AttachMoneyIcon,
 };
 
 export default IRAS;

@@ -1,5 +1,3 @@
-import ShoppingCart from "@mui/icons-material/ShoppingCart";
-
 const Shopee = {
   jobTitle: "Software Engineer Intern",
   company: "Shopee",
@@ -11,7 +9,6 @@ const Shopee = {
     "Worked on repository migration for project expansion and documentation to onboard new developers",
     "Utilized Typescript, ReactJS and NodeJS in development",
   ],
-  icon: ShoppingCart,
 };
 
 export default Shopee;

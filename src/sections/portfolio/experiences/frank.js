@@ -1,5 +1,3 @@
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-
 const Frank = {
   jobTitle: "Software Engineer Intern",
   company: "Frank by OCBC",
@@ -9,7 +7,6 @@ const Frank = {
     "Developed microservices related to stock search and fact sheets using Java Spring Boot MVC framework",
     "Worked with RESTful & GraphQL API services",
   ],
-  icon: AccountBalanceIcon,
 };
 
 export default Frank;

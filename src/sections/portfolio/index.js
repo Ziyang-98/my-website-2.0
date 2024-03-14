@@ -1,7 +1,17 @@
 import React from "react";
 import styles from "./index.module.scss";
 // import { Carousel, CarouselItem } from "./components/carousel";
-import PortfolioWheel from "./components/wheel";
+import Divider from "components/divider";
+import ExperienceLayout from "./components/experience";
+import Shopee from "./experiences/shopee";
+import DSTA from "./experiences/dsta";
+import RDC from "./experiences/rdc";
+import Frank from "./experiences/frank";
+import IRAS from "./experiences/iras";
+import CS2030STA from "./experiences/cs2030TA";
+import CS2030TA from "./experiences/cs2030sTA";
+
+const experiences = [DSTA, Shopee, RDC, Frank, IRAS, CS2030STA, CS2030TA];
 
 export default function Portfolio({ portfolioSectionRef }) {
   /*
@@ -18,7 +28,18 @@ export default function Portfolio({ portfolioSectionRef }) {
         <CarouselItem>Item 2</CarouselItem>
         <CarouselItem>Item 3</CarouselItem>
       </Carousel> */}
-      <PortfolioWheel />
+      <div className={styles["title-holder"]}>
+        <Divider />
+        <h2 className={styles.title}>Experiences</h2>
+      </div>
+      <div className={styles["portfolio-wheel-holder"]}>
+        {experiences.map((experience, i) => (
+          <div key={i}>
+            <ExperienceLayout experience={experience} />
+            {i < experiences.length - 1 && <hr className="solid" />}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

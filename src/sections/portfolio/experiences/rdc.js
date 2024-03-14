@@ -1,5 +1,3 @@
-import BusinessIcon from "@mui/icons-material/Business";
-
 const RDC = {
   jobTitle: "Software Engineer Intern",
   company: "Regional Development Center (RDC)",
@@ -10,7 +8,6 @@ const RDC = {
     "Improved scalability in the project by modularizing the existing monolith web application into micro-frontend applications",
     "Utilized Typescript, ReactJS, NodeJS and qiankun in development",
   ],
-  icon: BusinessIcon,
 };
 
 export default RDC;

@@ -9,3 +9,20 @@
   min-height: 100vh;
   padding: 2rem 0;
 }
+
+.title-holder {
+  width: 60%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: $heading-medium;
+  color: $text-light;
+}
+
+.experience-divider {
+  width: 80%;
+  height: 1px;
+  border-radius: 10px;
+  border-color: black;
+}
