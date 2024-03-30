@@ -29,9 +29,6 @@ export default function Portfolio({ portfolioSectionRef }) {
           <li className={styles["timeline-item"]} key={index}>
             <div className={styles["timeline-content"]}>
               <ExperienceCard {...exp} funFact="Fun Fact" />
-
-              {/* <h3 className={styles["timeline-title"]}>{exp.jobTitle}</h3>
-              <p className={styles["timeline-desc"]}>{exp.company}</p> */}
             </div>
             <time className={styles["timeline-duration"]}>{exp.duration}</time>
           </li>

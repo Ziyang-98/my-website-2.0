@@ -8,21 +8,21 @@ export default function ExperienceCard({
   funFact,
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
-
   return (
-    <div
-      className={`${styles.card} ${isFlipped ? styles.flipped : ""}`}
-      onClick={(isFlipped) => setIsFlipped(!isFlipped)}
-    >
-      <div className={styles["card-front"]}>
-        <header className={styles["card-header"]}>
-          <h2 className={styles["card-title"]}>{jobTitle}</h2>
-          <p className={styles["card-subtitle"]}>{company}</p>
-        </header>
-        <var className={styles["card-description"]}>{description}</var>
-      </div>
+    <div className={styles["card-container"]}>
+      <div
+        className={`${styles.card} ${isFlipped ? styles.flipped : ""}`}
+        onClick={() => setIsFlipped(!isFlipped)}
+      >
+        <div className={styles["card-front"]}>
+          <header className={styles["card-header"]}>
+            <h2 className={styles["card-title"]}>{jobTitle}</h2>
+            <p className={styles["card-subtitle"]}>{company}</p>
+          </header>
+          <p className={styles["card-description"]}>{description}</p>
+        </div>
 
-      {/* 
+        {/* 
       TODO: Add flip back functionality
       <div className={styles["card-back"]}>
         <header>
@@ -31,6 +31,7 @@ export default function ExperienceCard({
         </header>
         <p>{funFact}</p>
       </div> */}
+      </div>
     </div>
   );
 }
