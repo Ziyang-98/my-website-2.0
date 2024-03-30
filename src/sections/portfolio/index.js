@@ -8,6 +8,7 @@ import Frank from "./experiences/frank";
 import IRAS from "./experiences/iras";
 import CS2030STA from "./experiences/cs2030TA";
 import CS2030TA from "./experiences/cs2030sTA";
+import ExperienceCard from "./components/experience-card";
 
 const experiences = [DSTA, Shopee, RDC, Frank, IRAS, CS2030STA, CS2030TA];
 
@@ -24,11 +25,13 @@ export default function Portfolio({ portfolioSectionRef }) {
         <h2 className={styles.title}>Experiences</h2>
       </div>
       <ol className={styles.timeline}>
-        {experiences.map((exp) => (
-          <li className={styles["timeline-item"]}>
+        {experiences.map((exp, index) => (
+          <li className={styles["timeline-item"]} key={index}>
             <div className={styles["timeline-content"]}>
-              <h3 className={styles["timeline-title"]}>{exp.jobTitle}</h3>
-              <p className={styles["timeline-desc"]}>{exp.company}</p>
+              <ExperienceCard {...exp} funFact="Fun Fact" />
+
+              {/* <h3 className={styles["timeline-title"]}>{exp.jobTitle}</h3>
+              <p className={styles["timeline-desc"]}>{exp.company}</p> */}
             </div>
             <time className={styles["timeline-duration"]}>{exp.duration}</time>
           </li>
