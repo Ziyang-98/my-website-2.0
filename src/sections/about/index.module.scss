@@ -1,21 +1,17 @@
 @import "../../styles/theme";
 
-.aboutSection {
+.about {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  max-width: 80rem;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 0;
 }
 
-.aboutMeHolder {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 50%;
+.title-holder {
+  width: $title-width;
 }
 
 .title {
@@ -24,17 +20,34 @@
   color: $text-light;
 }
 
-.aboutMe {
+.content-holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-container {
   font-weight: 400;
   font-size: $text-medium;
   color: $gray-text-light;
 }
 
-.avatarHolder {
+.avatar-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 50%;
   perspective: 60rem;
 }

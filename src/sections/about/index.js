@@ -16,16 +16,17 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
   // };
 
   return (
-    <div
-      ref={aboutSectionRef}
-      className={styles.aboutSection}
-      id="about-section"
-    >
-      <div className={styles.aboutMeHolder}>
+    <div ref={aboutSectionRef} className={styles.about} id="about-section">
+      <div className={styles["title-holder"]}>
         <Divider />
         <h2 className={styles.title}>About Me</h2>
-        <p className={styles.aboutMe}>This is about me</p>
-        <div>
+      </div>
+      <div className={styles["content-holder"]}>
+        <div className={styles["about-me-container"]}>
+          <p className={styles["text-container"]}>
+            Hi there! My name is <b>Lim Zi Yang</b> and I am a software engineer
+            working at DSTA.
+          </p>
           <button
             onClick={scrollIntoPortfolioSection}
             className={styles.button}
@@ -33,9 +34,9 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
             Click Me!
           </button>
         </div>
-      </div>
-      <div id="avatarHolder" className={styles.avatarHolder}>
-        <img src={dp} id="avatar" alt="Avatar" className={styles.avatar} />
+        <div id="avatarHolder" className={styles["avatar-container"]}>
+          <img src={dp} id="avatar" alt="Avatar" className={styles.avatar} />
+        </div>
       </div>
     </div>
   );
