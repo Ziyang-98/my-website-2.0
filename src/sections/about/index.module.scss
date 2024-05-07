@@ -25,7 +25,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
 }
 
 .about-me-container {
@@ -45,7 +45,7 @@
 
 .avatar-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
   height: 50%;
@@ -53,8 +53,8 @@
 }
 
 .avatar {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   object-fit: cover;
   transform-origin: center center;
