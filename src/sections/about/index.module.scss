@@ -32,8 +32,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 50%;
-  justify-content: center;
+  min-height: 50vh;
   align-items: flex-start;
 }
 
@@ -82,5 +81,34 @@
 
   &:hover {
     background-color: $accent-light;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .content-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 70%;
+  }
+
+  .about-me-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    min-height: auto;
+    > * + * {
+      margin-top: 1rem;
+    }
+  }
+
+  .avatar-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
