@@ -10,11 +10,12 @@
   padding: 2rem;
   justify-content: center;
   align-items: flex-start;
-  width: 35rem;
-  max-width: 100%;
+  max-width: 35rem;
+  margin-right: 3rem;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
