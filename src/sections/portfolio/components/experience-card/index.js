@@ -25,7 +25,9 @@ export default function ExperienceCard({
 
         {/* TODO: Add flip back functionality */}
         <div className={styles["card-back"]}>
-          <p>{funFact}</p>
+          <h2 className={styles["card-back-title"]}>Fun Fact</h2>
+          <div className={styles["card-back-divider"]} />
+          <p className={styles["card-back-funfact"]}>{funFact}</p>
         </div>
       </div>
     </div>

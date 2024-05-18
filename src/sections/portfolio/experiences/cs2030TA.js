@@ -9,6 +9,8 @@ const CS2030STA = {
     "Assessed assignments and gave feedback to students' code",
     "Built students' proficiency in Java",
   ],
+  funFact:
+    "My first time tutoring :O It was hard work and long hours but seeing students excel is something I am very proud of!",
 };
 
 export default CS2030STA;

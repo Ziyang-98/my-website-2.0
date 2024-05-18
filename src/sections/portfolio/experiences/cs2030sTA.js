@@ -9,6 +9,8 @@ const CS2030TA = {
     "Assessed assignments and gave feedback to students' code",
     "Built students' proficiency in Java",
   ],
+  funFact:
+    "I won an award for this role! Excellence in Teaching based on student ratings.",
 };
 
 export default CS2030TA;

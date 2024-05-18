@@ -28,7 +28,7 @@ export default function Portfolio({ portfolioSectionRef }) {
         {experiences.map((exp, index) => (
           <li className={styles["timeline-item"]} key={index}>
             <div className={styles["timeline-content"]}>
-              <ExperienceCard {...exp} funFact="Fun Fact" />
+              <ExperienceCard {...exp} />
             </div>
             <time className={styles["timeline-duration"]}>{exp.duration}</time>
           </li>

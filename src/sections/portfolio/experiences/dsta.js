@@ -7,6 +7,8 @@ const DSTA = {
   jobscope: [
     "Working as a Full-Stack Engineer under Enterprise Digital Services",
   ],
+  funFact:
+    "First time implementing frontend and backend libraries instead of using them!",
 };
 
 export default DSTA;

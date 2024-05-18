@@ -87,6 +87,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 }
 
 .card.flipped {
@@ -121,4 +124,32 @@
 
 .card-description {
   margin-top: 0.5rem;
+}
+
+.card-back-title {
+  width: 20%;
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.card-back-divider {
+  height: 70%;
+  border: $secondary-light 1px solid;
+  opacity: 0.3;
+
+  margin: 0 15px 20px 10px;
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    height: 0;
+    margin: 0;
+  }
+}
+
+.card-back-funfact {
+  width: 78%;
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
 }

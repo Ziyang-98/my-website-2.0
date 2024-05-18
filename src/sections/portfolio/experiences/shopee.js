@@ -9,6 +9,8 @@ const Shopee = {
     "Worked on repository migration for project expansion and documentation to onboard new developers",
     "Utilized Typescript, ReactJS and NodeJS in development",
   ],
+  funFact:
+    "The pantries and cafeteria were stacked with snacks and drinks (pre-layoffs). There was a recreational area with a pool table, fooseball table and a massage room too!",
 };
 
 export default Shopee;

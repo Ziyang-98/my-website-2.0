@@ -7,6 +7,8 @@ const Frank = {
     "Developed microservices related to stock search and fact sheets using Java Spring Boot MVC framework",
     "Worked with RESTful & GraphQL API services",
   ],
+  funFact:
+    "The office was small but it was designed with street art with graffiti murals all over the place!",
 };
 
 export default Frank;

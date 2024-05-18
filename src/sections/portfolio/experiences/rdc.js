@@ -8,6 +8,7 @@ const RDC = {
     "Improved scalability in the project by modularizing the existing monolith web application into micro-frontend applications",
     "Utilized Typescript, ReactJS, NodeJS and qiankun in development",
   ],
+  funFact: "The interns were issued a portable PC instead of laptop for work!",
 };
 
 export default RDC;
