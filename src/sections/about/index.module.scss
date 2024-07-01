@@ -40,14 +40,21 @@
   font-weight: 400;
   font-size: $text-medium;
   color: $gray-text-light;
+  min-height: 20vh;
+  width: 90%;
+
+  .name {
+    color: $primary-light;
+    font-size: $text-small;
+    font-weight: 500;
+  }
 }
 
 .avatar-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   width: 50%;
-  height: 50%;
+  min-height: 50vh;
   perspective: 60rem;
 }
 
@@ -95,6 +102,7 @@
 
   .about-me-container {
     width: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

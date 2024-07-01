@@ -24,13 +24,10 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
       <div className={styles["content-holder"]}>
         <div className={styles["about-me-container"]}>
           <p className={styles["text-container"]}>
-            Hi there! My name is <b>Lim Zi Yang</b> and I am a software engineer
-            working at DSTA. I graduated from the National University of
-            Singapore with a Bachelors in Computing (Computer Science) in 2023.
-            I'm a tech enthusiast and I enjoy keeping up with the latest trends
-            of Artificial Intelligence (A.I.) and Software Engineering. Apart
-            from work, I like to work on my personal projects, developing web
-            applications and services for leisure and exposure.
+            Hi there! I'm <span className={styles["name"]}>Lim Zi Yang</span>{" "}
+            and welcome to my site! I am an apsiring full stack web developer
+            and I love to work on fun stuff. Check out my experiences and
+            projects below!
           </p>
           <button
             onClick={scrollIntoPortfolioSection}
