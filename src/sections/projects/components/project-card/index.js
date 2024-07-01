@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
+import ThemedButton from "components/themed-button";
 
 export default function ProjectCard({
   className,
@@ -19,7 +20,7 @@ export default function ProjectCard({
       <div className={styles["project-info-holder"]}>
         <h2 className={styles["project-card-title"]}>Card 1</h2>
         <p className={styles["project-card-description"]}>{previewContent}</p>
-        <button
+        {/* <button
           className={styles["project-card-button"]}
           onClick={() => {
             if (!isExpanded) {
@@ -28,7 +29,17 @@ export default function ProjectCard({
           }}
         >
           Learn More
-        </button>
+        </button> */}
+        <ThemedButton
+          onClick={() => {
+            if (!isExpanded) {
+              expandCard();
+            }
+          }}
+          size={"small"}
+          text="Learn More"
+          className={styles["project-card-button"]}
+        />
       </div>
     </div>
   );

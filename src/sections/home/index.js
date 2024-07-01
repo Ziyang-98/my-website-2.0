@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
+import ThemedButton from "components/themed-button";
 
 export default function Home({ scrollIntoAboutSection }) {
   // const handleScrollToAbout = () => {
@@ -16,9 +17,7 @@ export default function Home({ scrollIntoAboutSection }) {
           I <span className={styles.persona} />
         </p>
       </span>
-      <button onClick={scrollIntoAboutSection} className={styles.button}>
-        Click Me!
-      </button>
+      <ThemedButton onClick={scrollIntoAboutSection} size={"large"} />
     </div>
   );
 }

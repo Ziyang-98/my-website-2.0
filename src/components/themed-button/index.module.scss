@@ -1,0 +1,35 @@
+@import "../../styles/theme";
+
+@mixin button($py, $px, $text-size, $letter-spacing) {
+  font-family: "Sora", sans-serif;
+  font-size: $text-size;
+  background-color: $primary-light;
+  color: $foreground-text-light;
+  letter-spacing: $letter-spacing;
+  display: inline-block;
+  padding-top: auto;
+  padding: $py $px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+
+  &:hover {
+    background-color: $accent-light;
+  }
+}
+
+.large {
+  @include button(30px, 60px, $text-medium, 4px);
+}
+
+.medium {
+  @include button(15px, 30px, $text-small, 3px);
+}
+
+.small {
+  @include button(10px, 20px, $text-very-small, 2px);
+}
+
+.rounded {
+  border-radius: 50px;
+}

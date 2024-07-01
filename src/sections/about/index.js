@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import dp from "assets/images/dp.jpg";
 import useAnimationAvatar from "./hooks/use-animation-avatar";
 import Divider from "components/divider";
+import ThemedButton from "components/themed-button";
 
 export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
   const hasTilt = true;
@@ -29,12 +30,7 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
             and I love to work on fun stuff. Check out my experiences and
             projects below!
           </p>
-          <button
-            onClick={scrollIntoPortfolioSection}
-            className={styles.button}
-          >
-            Click Me!
-          </button>
+          <ThemedButton onClick={scrollIntoPortfolioSection} size={"medium"} />
         </div>
         <div id="avatarHolder" className={styles["avatar-container"]}>
           <img src={dp} id="avatar" alt="Avatar" className={styles.avatar} />
