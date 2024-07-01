@@ -6,8 +6,8 @@ import DSTA from "./experiences/dsta";
 import RDC from "./experiences/rdc";
 import Frank from "./experiences/frank";
 import IRAS from "./experiences/iras";
-import CS2030STA from "./experiences/cs2030TA";
-import CS2030TA from "./experiences/cs2030sTA";
+import CS2030STA from "./experiences/cs2030sTA";
+import CS2030TA from "./experiences/cs2030TA";
 import ExperienceCard from "./components/experience-card";
 
 const experiences = [DSTA, Shopee, RDC, Frank, IRAS, CS2030STA, CS2030TA];
