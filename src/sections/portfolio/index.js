@@ -15,11 +15,6 @@ const experiences = [DSTA, Shopee, RDC, Frank, IRAS, CS2030STA, CS2030TA];
 export default function Portfolio({ portfolioSectionRef }) {
   return (
     <div ref={portfolioSectionRef} className={styles.portfolio} id="portfolio">
-      {/* <Carousel height="60vh" width="60vw">
-        <CarouselItem>Item 1</CarouselItem>
-        <CarouselItem>Item 2</CarouselItem>
-        <CarouselItem>Item 3</CarouselItem>
-      </Carousel> */}
       <div className={styles["title-holder"]}>
         <Divider />
         <h2 className={styles.title}>Experiences</h2>
