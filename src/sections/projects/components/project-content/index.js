@@ -1,11 +1,8 @@
 import styles from "./index.module.scss";
 
-export default function ProjectContent({ closeCard, currentExpandedContent }) {
+export default function ProjectContent({ currentExpandedContent }) {
   return (
-    <div>
-      <button className={styles["close-button"]} onClick={closeCard}>
-        <p>Close</p>
-      </button>
+    <div className={styles["project-content-holder"]}>
       <p>{currentExpandedContent}</p>
     </div>
   );

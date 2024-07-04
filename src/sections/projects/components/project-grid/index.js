@@ -18,10 +18,10 @@ export default function ProjectGrid({ content }) {
   return (
     <div className={styles["grid-container"]}>
       <Modal isModalOpen={isModalActive}>
-        <ProjectContent
-          closeCard={closeCard}
-          currentExpandedContent={currentExpandedContent}
-        />
+        <button className={styles["close-button"]} onClick={closeCard}>
+          <p>Close</p>
+        </button>
+        <ProjectContent currentExpandedContent={currentExpandedContent} />
       </Modal>
       {content.map((c, i) => (
         <ProjectCard
