@@ -20,16 +20,6 @@ export default function ProjectCard({
       <div className={styles["project-info-holder"]}>
         <h2 className={styles["project-card-title"]}>Card 1</h2>
         <p className={styles["project-card-description"]}>{previewContent}</p>
-        {/* <button
-          className={styles["project-card-button"]}
-          onClick={() => {
-            if (!isExpanded) {
-              expandCard();
-            }
-          }}
-        >
-          Learn More
-        </button> */}
         <ThemedButton
           onClick={() => {
             if (!isExpanded) {
