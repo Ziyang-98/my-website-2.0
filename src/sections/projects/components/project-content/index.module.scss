@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   height: 100%;
+  opacity: 0;
 }
 
 .gallery-holder {
@@ -11,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
 }
 
 .details-holder {
