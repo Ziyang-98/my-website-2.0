@@ -11,7 +11,10 @@ export default function ProjectContent({ currentExpandedContent }) {
           <CarouselItem>Item 3</CarouselItem>
         </Carousel>
       </div>
-      <div className={styles["details-holder"]}>{currentExpandedContent}</div>
+      <div className={styles["details-holder"]}>
+        <h1>Sample Title</h1>
+        <div>{currentExpandedContent}</div>
+      </div>
     </div>
   );
 }
