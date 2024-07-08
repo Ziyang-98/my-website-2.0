@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 
 export default function Modal({ closeModal, children }) {
+  // For closing of modal on background click
+  useEffect(() => {
+    const parentDiv = document.getElementById("modal-background");
+    parentDiv.addEventListener("click", function (event) {
+      if (event.target === event.currentTarget) {
+        closeModal();
+      }
+    });
+  }, [closeModal]);
+
   return (
     <div id="modal-container" className={`${styles["modal-container"]}`}>
-      <div className={styles["modal-background"]}>
-        <div className={styles.modal}>
+      <div id="modal-background" className={styles["modal-background"]}>
+        <div id="modal-content" className={styles.modal}>
           {children}
           <button className={styles["close-button"]} onClick={closeModal}>
             <svg
