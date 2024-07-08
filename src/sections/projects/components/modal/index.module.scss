@@ -37,6 +37,7 @@
         .modal {
           animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
             forwards;
+          div,
           h2,
           p {
             animation: modalContentFadeOut 0.5s

@@ -2,13 +2,12 @@ import React from "react";
 
 import styles from "./index.module.scss";
 import ProjectCard from "../project-card";
-import useProjects from "sections/projects/hooks/useProjects";
+import useProjects from "sections/projects/hooks/use-projects";
 import Modal from "../modal";
 import ProjectContent from "../project-content";
 
 export default function ProjectGrid({ content }) {
   const {
-    isModalActive,
     expanded,
     expandCard,
     closeCard,
@@ -17,7 +16,7 @@ export default function ProjectGrid({ content }) {
   } = useProjects();
   return (
     <div className={styles["grid-container"]}>
-      <Modal isModalOpen={isModalActive}>
+      <Modal>
         <ProjectContent currentExpandedContent={currentExpandedContent} />
         <button className={styles["close-button"]} onClick={closeCard}>
           <p>Close</p>

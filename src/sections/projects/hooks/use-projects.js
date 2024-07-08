@@ -48,9 +48,8 @@ export default function useProjects() {
     document.body.classList.remove("modal-active"); // Remove class when modal is closed
     const modalContainer = document.getElementById("modal-container");
     modalContainer.classList.add(modalStyles.out);
+    await delay(1);
     // modalContainer.classList.remove(modalStyles.active);
-    // modalContainer.classList.remove(modalStyles.out);
-    await delay(0.5);
     setExpanded(NO_EXPANDED);
     setCurrentExpandedContent(NO_EXPANDED_CARD);
   };
