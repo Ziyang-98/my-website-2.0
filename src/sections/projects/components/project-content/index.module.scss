@@ -16,8 +16,17 @@
 
 .details-holder {
   width: 50%;
-  // display: flex;
-  // flex-direction: column;
+  height: 100%;
+  padding: 0 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   // justify-content: center;
-  // align-items: center;
+  align-items: center;
+}
+
+.links-holder {
+  margin-top: auto;
+  display: flex;
+  width: fit-content;
 }
