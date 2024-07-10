@@ -7,6 +7,7 @@ export default function ThemedButton({
   text = "Click Me!",
   isRounded = true,
   className,
+  children,
 }) {
   return (
     <button
@@ -15,7 +16,7 @@ export default function ThemedButton({
         isRounded ? styles.rounded : ""
       } ${className}`}
     >
-      {text}
+      {children ?? text}
     </button>
   );
 }

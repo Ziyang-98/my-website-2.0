@@ -7,7 +7,6 @@
   color: $foreground-text-light;
   letter-spacing: $letter-spacing;
   display: inline-block;
-  padding-top: auto;
   padding: $py $px;
   border: none;
   cursor: pointer;
@@ -28,6 +27,10 @@
 
 .small {
   @include button(10px, 20px, $text-very-small, 2px);
+}
+
+.icon {
+  @include button(10px, 12px, $text-very-small, 2px);
 }
 
 .rounded {
