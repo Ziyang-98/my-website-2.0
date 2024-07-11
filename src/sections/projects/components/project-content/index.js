@@ -10,9 +10,26 @@ export default function ProjectContent({ currentExpandedContent }) {
     <div className={styles["project-content-holder"]}>
       <div className={styles["gallery-holder"]}>
         <Carousel height="100%">
-          <CarouselItem>Item 1</CarouselItem>
-          <CarouselItem>Item 2</CarouselItem>
-          <CarouselItem>Item 3</CarouselItem>
+          <CarouselItem className={styles["project-carousel-item"]}>
+            <img
+              className={styles["project-card-img"]}
+              alt="sample"
+              width={"100%"}
+              height={"65%"}
+              src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </CarouselItem>
+          <CarouselItem className={styles["project-carousel-item"]}>
+            <img
+              className={styles["project-card-img"]}
+              alt="sample"
+              width={"100%"}
+              height={"65%"}
+              src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </CarouselItem>
+          {/* <CarouselItem>Item 2</CarouselItem>
+          <CarouselItem>Item 3</CarouselItem> */}
         </Carousel>
       </div>
       <div className={styles["details-holder"]}>
