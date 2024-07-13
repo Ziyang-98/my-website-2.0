@@ -9,8 +9,8 @@ export default function ThemedLinkButton({
   return (
     <a
       className={`${styles["themed-link-button"]} ${className}`}
-      target={!!openNewTab && "_blank"}
-      rel={!!openNewTab && "noopener noreferrer"}
+      target={openNewTab ? "_blank" : ""}
+      rel={openNewTab ? "noopener noreferrer" : ""}
       href={url}
     >
       {children}

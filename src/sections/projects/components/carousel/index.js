@@ -129,10 +129,10 @@ function Carousel({ children, width, height }) {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-maximize"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-maximize"
         >
           <path d="M8 3H5a2 2 0 0 0-2 2v3" />
           <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
