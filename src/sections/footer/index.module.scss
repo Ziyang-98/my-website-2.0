@@ -32,8 +32,11 @@
   color: $secondary-light;
 }
 
-.social-media-icons-holder > * + * {
-  margin-left: 2rem;
+.social-media-icons-holder {
+  display: flex;
+  > * + * {
+    margin-left: 2rem;
+  }
 }
 
 .divider {

@@ -1,0 +1,19 @@
+@import "../../styles/theme";
+
+.themed-link-button {
+    background-color: #055f73;
+    color: #6fbbbb;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+    &:hover {
+      background-color: $primary-light;
+    }
+}
