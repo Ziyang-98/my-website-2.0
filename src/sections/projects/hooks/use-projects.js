@@ -1,6 +1,8 @@
 import { useState } from "react";
 import modalStyles from "../components/modal/index.module.scss";
 import { delay } from "commons/utils";
+import ReactIcon from "assets/logos/framework/react.png";
+import TypescriptIcon from "assets/logos/language/typescript.png";
 
 const previewContent = [
   "content1",
@@ -24,6 +26,11 @@ const expandedContent = [
   "expandedContent7",
   "expandedContent8",
   "expandedContent9",
+];
+
+const sampleTechStack = [
+  { name: "Typescript", image: TypescriptIcon },
+  { name: "React", image: ReactIcon },
 ];
 
 const NO_EXPANDED = -1;
@@ -61,5 +68,6 @@ export default function useProjects() {
     closeCard,
     previewContent,
     currentExpandedContent,
+    techStack: sampleTechStack,
   };
 }

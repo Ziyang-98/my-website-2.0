@@ -5,7 +5,7 @@ import ThemedLink from "components/themed-link";
 const sampleDescription =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate velit ante, at consectetur metus posuere vitae. Aliquam accumsan, ipsum ut accumsan varius, nulla sem placerat metus, non dignissim ipsum ante id mi. Pellentesque arcu ipsum, fringilla id vestibulum non, auctor sit amet mauris. Nunc finibus efficitur nisi. Cras faucibus ex non ex finibus, vel fermentum tellus iaculis. Phasellus ac luctus diam. Vestibulum vel sapien eget orci vulputate laoreet quis ac libero. Phasellus ut ipsum est. Duis sit amet vulputate justo.";
 
-export default function ProjectContent({ currentExpandedContent }) {
+export default function ProjectContent({ currentExpandedContent, techStack }) {
   return (
     <div className={styles["project-content-holder"]}>
       <div className={styles["gallery-holder"]}>
@@ -34,9 +34,13 @@ export default function ProjectContent({ currentExpandedContent }) {
       </div>
       <div className={styles["details-holder"]}>
         <h1>Sample Title</h1>
-        <div>{sampleDescription}</div>
-        <div>{sampleDescription}</div>
-        <div>{sampleDescription}</div>
+        <div className={styles["details-description"]}>{sampleDescription}</div>
+        <h3 className={styles["details-header"]}>Tech Stack</h3>
+        <div className={styles["tech-stack-holder"]}>
+          {techStack?.map((icon) => (
+            <img src={icon.image} alt={icon.name} className={styles["icon"]} />
+          ))}
+        </div>
 
         <div className={styles["links-holder"]}>
           <ThemedLink

@@ -25,6 +25,27 @@
   align-items: center;
 }
 
+.details-header {
+  width: 90%;
+  display: flex;
+  color: $accent-light;
+}
+
+.tech-stack-holder {
+  width: 90%;
+  display: flex;
+  .header {
+    font-size: $text-large;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  > * + * {
+    margin-left: 1rem;
+  }
+}
+
 .links-holder {
   margin-top: auto;
   display: flex;

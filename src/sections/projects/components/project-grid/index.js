@@ -13,11 +13,15 @@ export default function ProjectGrid({ content }) {
     closeCard,
     previewContent,
     currentExpandedContent,
+    techStack,
   } = useProjects();
   return (
     <div className={styles["grid-container"]}>
       <Modal closeModal={closeCard}>
-        <ProjectContent currentExpandedContent={currentExpandedContent} />
+        <ProjectContent
+          currentExpandedContent={currentExpandedContent}
+          techStack={techStack}
+        />
       </Modal>
       {content.map((c, i) => (
         <ProjectCard
