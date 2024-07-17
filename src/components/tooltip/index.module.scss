@@ -1,0 +1,29 @@
+@import "styles/theme";
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: fit-content;
+  bottom: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $gray-text-light;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: $text-very-small;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

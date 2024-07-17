@@ -1,3 +1,4 @@
+import Tooltip from "components/tooltip";
 import { Carousel, CarouselItem } from "../carousel";
 import styles from "./index.module.scss";
 import ThemedLink from "components/themed-link";
@@ -38,7 +39,13 @@ export default function ProjectContent({ currentExpandedContent, techStack }) {
         <h3 className={styles["details-header"]}>Tech Stack</h3>
         <div className={styles["tech-stack-holder"]}>
           {techStack?.map((icon) => (
-            <img src={icon.image} alt={icon.name} className={styles["icon"]} />
+            <Tooltip tooltipText={icon.name}>
+              <img
+                src={icon.image}
+                alt={icon.name}
+                className={styles["icon"]}
+              />
+            </Tooltip>
           ))}
         </div>
 
