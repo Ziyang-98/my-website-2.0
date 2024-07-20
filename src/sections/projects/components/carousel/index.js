@@ -57,7 +57,6 @@ function Carousel({ children, width, height }) {
 
   const handleFullscreenButtonClick = () => {
     if (document.fullscreenElement === null) {
-      console.log("entering");
       const carouselDisplayElement =
         document.getElementById("carousel-display");
       if (carouselDisplayElement.requestFullscreen) {

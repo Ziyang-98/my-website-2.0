@@ -9,7 +9,6 @@ import ProjectContent from "../project-content";
 export default function ProjectGrid() {
   const { expanded, expandCard, closeCard, projects, currentProject } =
     useProjects();
-  console.log(currentProject);
   return (
     <div className={styles["grid-container"]}>
       <Modal closeModal={closeCard}>

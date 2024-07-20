@@ -32,7 +32,7 @@ const Modplanner = {
   },
   previewSize: {
     width: "100%",
-    height: "80%",
+    height: "40%",
   },
   showcaseSizes: {
     large: { width: 800, height: 570 },

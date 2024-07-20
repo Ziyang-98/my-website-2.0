@@ -31,8 +31,8 @@ const CoralReefConservation = {
     ],
   },
   previewSize: {
-    width: "90%",
-    height: "60%",
+    width: "100%",
+    height: "40%",
   },
   showcaseSizes: {
     large: { width: 650, height: 470 },

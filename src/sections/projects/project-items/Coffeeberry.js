@@ -26,8 +26,8 @@ const Coffeeberry = {
     ],
   },
   previewSize: {
-    width: "30%",
-    height: "100%",
+    width: "40%",
+    height: "50%",
   },
   showcaseSizes: {
     large: { width: 630, height: 470 },

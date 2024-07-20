@@ -14,8 +14,8 @@ const CommonCents = {
     showcases: [{ image: CommonCentsShowcase, title: "Common Cent's UI" }],
   },
   previewSize: {
-    width: "30%",
-    height: "100%",
+    width: "40%",
+    height: "50%",
   },
   showcaseSizes: {
     large: { width: 600, height: 400 },

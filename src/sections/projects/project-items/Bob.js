@@ -14,8 +14,8 @@ const Bob = {
     showcases: [{ image: BobShowcase, title: "Bob's UI" }],
   },
   previewSize: {
-    width: "70%",
-    height: "90%",
+    width: "60%",
+    height: "50%",
   },
   showcaseSizes: {
     large: { width: "400px", height: "600px" },
