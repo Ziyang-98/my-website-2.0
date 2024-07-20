@@ -40,6 +40,12 @@
   .icon {
     width: 40px;
     height: 40px;
+
+    transition: transform 300ms ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
   > * + * {
     margin-left: 1rem;
