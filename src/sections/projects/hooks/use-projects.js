@@ -1,36 +1,22 @@
 import { useState } from "react";
 import modalStyles from "../components/modal/index.module.scss";
 import { delay } from "commons/utils";
-import ReactIcon from "assets/logos/framework/react.png";
-import TypescriptIcon from "assets/logos/language/typescript.png";
+import PeerPrep from "../project-items/PeerPrep";
+import JobTrack from "../project-items/JobTrack";
+import CoralReefConservation from "../project-items/CoralReefConservation";
+import Coffeeberry from "../project-items/Coffeeberry";
+import CommonCents from "../project-items/CommonCents";
+import Bob from "../project-items/Bob";
+import Modplanner from "../project-items/Modplanner";
 
-const previewContent = [
-  "content1",
-  "content2",
-  "content3",
-  "content4",
-  "content5",
-  "content6",
-  "content7",
-  "content8",
-  "content9",
-];
-
-const expandedContent = [
-  "expandedContent1",
-  "expandedContent2",
-  "expandedContent3",
-  "expandedContent4",
-  "expandedContent5",
-  "expandedContent6",
-  "expandedContent7",
-  "expandedContent8",
-  "expandedContent9",
-];
-
-const sampleTechStack = [
-  { name: "Typescript", image: TypescriptIcon },
-  { name: "React", image: ReactIcon },
+const projects = [
+  PeerPrep,
+  JobTrack,
+  CoralReefConservation,
+  Coffeeberry,
+  CommonCents,
+  Bob,
+  Modplanner,
 ];
 
 const NO_EXPANDED = -1;
@@ -39,12 +25,11 @@ const NO_EXPANDED_CARD = null;
 export default function useProjects() {
   const [expanded, setExpanded] = useState(NO_EXPANDED);
 
-  const [currentExpandedContent, setCurrentExpandedContent] =
-    useState(NO_EXPANDED_CARD);
+  const [currentProject, setCurrentProject] = useState(NO_EXPANDED_CARD);
 
   const expandCard = (index) => {
     setExpanded(index);
-    setCurrentExpandedContent(expandedContent[index]);
+    setCurrentProject(projects[index]);
     document.body.classList.add("modal-active"); // Add class to the body when modal is open
     const modalContainer = document.getElementById("modal-container");
     modalContainer.classList.remove(modalStyles.out);
@@ -58,7 +43,7 @@ export default function useProjects() {
     await delay(1);
     // modalContainer.classList.remove(modalStyles.active);
     setExpanded(NO_EXPANDED);
-    setCurrentExpandedContent(NO_EXPANDED_CARD);
+    setCurrentProject(NO_EXPANDED_CARD);
   };
 
   return {
@@ -66,8 +51,7 @@ export default function useProjects() {
     expanded,
     expandCard,
     closeCard,
-    previewContent,
-    currentExpandedContent,
-    techStack: sampleTechStack,
+    projects,
+    currentProject,
   };
 }
