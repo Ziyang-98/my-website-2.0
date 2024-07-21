@@ -26,32 +26,29 @@ export default function ProjectContent({ project }) {
               src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           </CarouselItem>
-          {/* <CarouselItem>Item 2</CarouselItem>
-          <CarouselItem>Item 3</CarouselItem> */}
         </Carousel>
       </div>
       <div className={styles["details-holder"]}>
-        <h1>{project?.title}</h1>
+        <div className={styles["details-title"]}>
+          <h1>{project?.title}</h1>
+        </div>
+
         <div className={styles["details-description"]}>
           {project?.description}
         </div>
-        <h3 className={styles["details-header"]}>Tech Stack</h3>
+        <h3 className={styles["details-section-header"]}>Tech Stack</h3>
         <div className={styles["tech-stack-holder"]}>
           {project?.techStack.map((icon) => (
             <Tooltip tooltipText={icon.name}>
-              <img
-                src={icon.image}
-                alt={icon.name}
-                className={styles["icon"]}
-              />
+              <img src={icon.img} alt={icon.name} className={styles["icon"]} />
             </Tooltip>
           ))}
         </div>
-
+        <h3 className={styles["details-section-header"]}>Links</h3>
         <div className={styles["links-holder"]}>
           {project?.links.map(({ name, link }) => (
             <ThemedLink href={link} openNewTab={true} iconSize={16}>
-              <h4>{name}</h4>
+              <h4 className={styles["link-text"]}>{name}</h4>
             </ThemedLink>
           ))}
         </div>
