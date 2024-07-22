@@ -17,24 +17,6 @@ export default function ProjectContent({ project }) {
               />
             </CarouselItem>
           ))}
-          {/* <CarouselItem className={styles["project-carousel-item"]}>
-            <img
-              className={styles["project-card-img"]}
-              alt="sample"
-              width={"100%"}
-              height={"65%"}
-              src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </CarouselItem>
-          <CarouselItem className={styles["project-carousel-item"]}>
-            <img
-              className={styles["project-card-img"]}
-              alt="sample"
-              width={"100%"}
-              height={"65%"}
-              src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </CarouselItem> */}
         </Carousel>
       </div>
       <div className={styles["details-holder"]}>
