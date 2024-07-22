@@ -7,18 +7,25 @@ import Modal from "../modal";
 import ProjectContent from "../project-content";
 
 export default function ProjectGrid() {
-  const { expanded, expandCard, closeCard, projects, currentProject } =
-    useProjects();
+  const {
+    isModalActive,
+    expanded,
+    expandCard,
+    closeCard,
+    projects,
+    currentProject,
+  } = useProjects();
   return (
     <div className={styles["grid-container"]}>
       <Modal closeModal={closeCard}>
-        <ProjectContent project={currentProject} />
+        {isModalActive && <ProjectContent project={currentProject} />}
       </Modal>
-      {projects.map((c, i) => (
+
+      {projects.map((project, i) => (
         <ProjectCard
           key={i}
           isExpanded={expanded === i}
-          project={projects[i]}
+          project={project}
           expandCard={() => expandCard(i)}
         />
       ))}

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import modalStyles from "../components/modal/index.module.scss";
-import { delay } from "commons/utils";
 import PeerPrep from "../project-items/PeerPrep";
 import JobTrack from "../project-items/JobTrack";
 import CoralReefConservation from "../project-items/CoralReefConservation";
@@ -36,12 +35,10 @@ export default function useProjects() {
     modalContainer.classList.add(modalStyles.active);
   };
 
-  const closeCard = async () => {
+  const closeCard = () => {
     document.body.classList.remove("modal-active"); // Remove class when modal is closed
     const modalContainer = document.getElementById("modal-container");
     modalContainer.classList.add(modalStyles.out);
-    await delay(1);
-    // modalContainer.classList.remove(modalStyles.active);
     setExpanded(NO_EXPANDED);
     setCurrentProject(NO_EXPANDED_CARD);
   };

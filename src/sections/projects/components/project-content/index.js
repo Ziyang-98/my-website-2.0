@@ -30,7 +30,7 @@ export default function ProjectContent({ project }) {
         <h3 className={styles["details-section-header"]}>Tech Stack</h3>
         <div className={styles["tech-stack-holder"]}>
           {project?.techStack.map((icon) => (
-            <Tooltip tooltipText={icon.name}>
+            <Tooltip tooltipText={icon.name} key={icon.name}>
               <img src={icon.img} alt={icon.name} className={styles["icon"]} />
             </Tooltip>
           ))}
@@ -38,7 +38,7 @@ export default function ProjectContent({ project }) {
         <h3 className={styles["details-section-header"]}>Links</h3>
         <div className={styles["links-holder"]}>
           {project?.links.map(({ name, link }) => (
-            <ThemedLink href={link} openNewTab={true} iconSize={16}>
+            <ThemedLink href={link} openNewTab={true} iconSize={16} key={name}>
               <h4 className={styles["link-text"]}>{name}</h4>
             </ThemedLink>
           ))}
