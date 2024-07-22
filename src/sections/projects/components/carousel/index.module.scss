@@ -74,17 +74,45 @@
 .carousel-left-btn-holder {
   @extend %carousel-btn-holder;
   left: 0;
+  &:hover {
+    .carousel-btn-holder {
+      transform: translateX(-5px);
+      background-color: #d1d1d1;
+    }
+  }
 }
 
 .carousel-right-btn-holder {
   @extend %carousel-btn-holder;
   right: 0;
+
+  &:hover {
+    .carousel-btn-holder {
+      transform: translateX(5px);
+      background-color: #d1d1d1;
+    }
+  }
+}
+
+.carousel-btn-holder {
+  background-color: #aaaaaa;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 
 .carousel-btn {
-  height: 40px;
-  height: 40px;
-  fill: #fff;
+  height: 30px;
+  width: 30px;
+  fill: transparent;
+  stroke: $accent-light;
+}
+
+.carousel-left-btn {
+  transform: translateX(-10px);
 }
 
 .fullscreen-button {
