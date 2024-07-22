@@ -1,18 +1,35 @@
 @import "styles/theme";
 
-.carousel-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #acacac;
-  color: #fff;
-}
-
 .carousel {
   overflow: hidden;
   position: relative;
   height: 100%;
   width: 100%;
+  .carousel-left-btn-holder {
+    visibility: hidden;
+  }
+
+  .carousel-right-btn-holder {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .carousel-left-btn-holder {
+      visibility: visible;
+    }
+
+    .carousel-right-btn-holder {
+      visibility: visible;
+    }
+  }
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8b8b8b;
+  color: #fff;
 }
 
 .inner {
@@ -95,7 +112,7 @@
 }
 
 .carousel-btn-holder {
-  background-color: #cccccc;
+  background-color: #9b9b9b;
   padding: 5px;
   border-radius: 50%;
   display: flex;
