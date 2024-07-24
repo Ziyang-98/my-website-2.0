@@ -78,7 +78,9 @@
 }
 
 .links-holder {
+  @include details-content-width;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .link-text {

@@ -39,7 +39,7 @@ export default function ProjectContent({ project }) {
         <div className={styles["links-holder"]}>
           {project?.links.map(({ name, link }) => (
             <ThemedLink href={link} openNewTab={true} iconSize={16} key={name}>
-              <h4 className={styles["link-text"]}>{name}</h4>
+              <span className={styles["link-text"]}>{name}</span>
             </ThemedLink>
           ))}
         </div>
