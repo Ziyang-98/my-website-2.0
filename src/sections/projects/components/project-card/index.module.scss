@@ -27,8 +27,9 @@
     align-items: center;
 
     .project-card-img {
-      top: 0;
-      left: 0;
+      width: 80%;
+      height: auto;
+      aspect-ratio: 4/3;
     }
   }
 
