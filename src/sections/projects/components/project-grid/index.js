@@ -17,7 +17,7 @@ export default function ProjectGrid() {
   } = useProjects();
   return (
     <div className={styles["grid-container"]}>
-      <Modal closeModal={closeCard}>
+      <Modal closeModal={closeCard} enableCloseButton={false}>
         {isModalActive && <ProjectContent project={currentProject} />}
       </Modal>
 

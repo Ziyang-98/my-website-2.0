@@ -30,6 +30,34 @@
   align-items: center;
 }
 
+@media (max-width: 1340px) {
+  .project-content-holder {
+    flex-direction: column;
+    overflow-y: auto;
+    margin: 0;
+  }
+  .gallery-holder {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details-holder {
+    width: auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: visible;
+    align-items: center;
+  }
+  .project-card-img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
 @mixin details-content-width {
   width: 90%;
 }
