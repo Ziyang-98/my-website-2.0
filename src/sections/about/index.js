@@ -10,12 +10,6 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
   const hasSpin = false;
   useAnimationAvatar(hasTilt, hasSpin);
 
-  // const handleScrollToPortfolio = () => {
-  //   const target = document.querySelector("#portfolio");
-  //   const duration = 1000;
-  //   smoothScrollTo(target, duration);
-  // };
-
   return (
     <div ref={aboutSectionRef} className={styles.about} id="about-section">
       <div className={styles["title-holder"]}>

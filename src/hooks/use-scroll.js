@@ -5,7 +5,7 @@ export default function useScroll() {
   const portfolioSectionRef = useRef(null);
 
   const scrollIntoSection = (sectionRef) => {
-    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const scrollIntoAboutSection = () => {

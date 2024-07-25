@@ -17,7 +17,9 @@ export default function Home({ scrollIntoAboutSection }) {
           I <span className={styles.persona} />
         </p>
       </span>
-      <ThemedButton onClick={scrollIntoAboutSection} size={"large"} />
+      <ThemedButton onClick={scrollIntoAboutSection} size={"large"}>
+        About Me!
+      </ThemedButton>
     </div>
   );
 }
