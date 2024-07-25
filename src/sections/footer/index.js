@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import { getLastUpdated } from "commons/utils";
 import ThemedLinkButton from "components/themed-link-button";
 
-const LAST_UPDATED = "2024-07-13T16:05:31.258Z";
+const LAST_UPDATED = "2024-07-25T12:39:12.769Z";
 
 const ICON_SIZE = 30;
 export default function Footer() {
