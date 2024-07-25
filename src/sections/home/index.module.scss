@@ -26,6 +26,13 @@
   font-weight: normal;
   font-size: $heading-large;
   color: $text-light;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .titleText {
+    font-size: $heading-medium;
+  }
 }
 
 .persona {
@@ -41,22 +48,20 @@
     "am a tech-enthusiast",
     "work on open-source projects",
     "read about latest tech trends",
+    "am still learning the latest js framework",
     "am a gamer",
-    "am a fan of turtles",
-    "play Tchoukball on the weekends",
+    "play sports on the weekends",
     "love to travel",
     "am learning how to cook",
-    "don't like to eat prawns",
-    "listen to kpop occasionally",
-    "love milkshakes",
-    "am still learning the latest js framework...",
+    "am not a fan of prawns",
+    "enjoy patronizing ice cream shops",
+    "like to snowboard",
     "know where you live!!",
-    "am joking about the previous one...",
-    "am sorry :')",
-    "hope that you aren't mad...",
+    "am joking...",
+    "hope that you aren't mad",
     "am not sure why you are still here...",
-    "hoped that you moved to other section",
-    "am repeating now",
+    "hoped that you moved to other sections",
+    "am going to repeat now",
     (
       type: 0.05,
       pause-typed: 0.5,
