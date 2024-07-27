@@ -44,20 +44,12 @@ const Modplanner = {
     "plan their university modules, share their planners as guides, " +
     "and participate in an online forum to discuss about relevant topics. " +
     "The project, handled by a team of two, aims to ease the process " +
-    "of module planning for NUS students. (Note: Give the website some time to load due to inactivity on heruko servers)",
+    "of module planning for NUS students. (Deployed app no longer active due to Heroku's paywall)",
   roles: [
     "Designed and built the user interface with ReactJS",
     "Added web hooks in the server to push or get data from the MongoDB database",
   ],
   links: [
-    {
-      name: "Project Info",
-      link: "https://mod-planner.herokuapp.com/About",
-    },
-    {
-      name: "Project Link",
-      link: "https://mod-planner.herokuapp.com",
-    },
     {
       name: "Repository",
       link: "https://github.com/Ziyang-98/NUS-University-Path-Planner",
