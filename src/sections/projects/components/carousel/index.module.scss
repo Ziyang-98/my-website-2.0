@@ -94,7 +94,7 @@
   &:hover {
     .carousel-btn-holder {
       transform: translateX(-5px);
-      background-color: #d1d1d1;
+      background-color: $secondary-light;
     }
   }
 }
@@ -106,13 +106,13 @@
   &:hover {
     .carousel-btn-holder {
       transform: translateX(5px);
-      background-color: #d1d1d1;
+      background-color: $secondary-light;
     }
   }
 }
 
 .carousel-btn-holder {
-  background-color: #9b9b9b;
+  background-color: transparent;
   padding: 5px;
   border-radius: 50%;
   display: flex;
