@@ -98,6 +98,7 @@
     align-items: center;
     flex-direction: column-reverse;
     width: 70%;
+    padding-bottom: 3rem;
   }
 
   .about-me-container {
@@ -118,5 +119,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-holder {
+    width: 80%;
+  }
+  .about-me-container {
+    padding-top: 0rem;
+    > * + * {
+      margin-top: 2rem;
+    }
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
   }
 }
