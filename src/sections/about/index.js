@@ -19,7 +19,7 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
       <div className={styles["content-holder"]}>
         <div className={styles["about-me-container"]}>
           <p className={styles["text-container"]}>
-            Hi there! I'm <span className={styles["name"]}>Lim Zi Yang</span>{" "}
+            Hi there, I'm <span className={styles["name"]}>Lim Zi Yang</span>{" "}
             and welcome to my site! I am an apsiring full stack web developer
             and I love to work on fun stuff. Check out my experiences and
             projects below!

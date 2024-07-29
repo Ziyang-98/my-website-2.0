@@ -14,10 +14,10 @@ export default function Home({ scrollIntoAboutSection }) {
       <span className={styles.name}>LIM ZI YANG</span>
       <span className={styles.title}>
         <p className={styles.titleText}>
-          I <span className={styles.persona} />
+          I am a <span className={styles.persona} />
         </p>
       </span>
-      <ThemedButton onClick={scrollIntoAboutSection} size={"large"}>
+      <ThemedButton onClick={scrollIntoAboutSection} size={"medium"}>
         About Me!
       </ThemedButton>
     </div>
