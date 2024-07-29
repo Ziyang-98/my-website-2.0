@@ -10,8 +10,6 @@ export default function ProjectCard({ isExpanded, project, expandCard }) {
           className={styles["project-card-img"]}
           alt="sample"
           src={project.image.preview}
-          // width={project.previewSize.width}
-          // height={project.previewSize.height}
         />
       </div>
       <div className={styles["project-info-holder"]}>
