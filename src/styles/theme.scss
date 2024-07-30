@@ -19,6 +19,14 @@ $background-light: #ffffff;
 
 $title-width: 70%;
 
+@mixin section-header-styles {
+  width: 70%;
+
+  @media only screen and (max-width: 600px) {
+    font-size: $text-very-small;
+  }
+}
+
 // $primary-foreground-light: #ffffff;
 // $secondary-foreground-light: #333333;
 // $text-light: #314163;

@@ -1,4 +1,4 @@
-@import "../../styles/theme";
+@use "../../styles/theme" as *;
 
 .portfolio {
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .title-holder {
-  width: $title-width;
+  @include section-header-styles;
 }
 
 .title {
