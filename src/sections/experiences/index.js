@@ -1,20 +1,24 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Divider from "components/divider";
-import Shopee from "./experiences/shopee";
-import DSTA from "./experiences/dsta";
-import RDC from "./experiences/rdc";
-import Frank from "./experiences/frank";
-import IRAS from "./experiences/iras";
-import CS2030STA from "./experiences/cs2030sTA";
-import CS2030TA from "./experiences/cs2030TA";
+import Shopee from "./experience-items/shopee";
+import DSTA from "./experience-items/dsta";
+import RDC from "./experience-items/rdc";
+import Frank from "./experience-items/frank";
+import IRAS from "./experience-items/iras";
+import CS2030STA from "./experience-items/cs2030sTA";
+import CS2030TA from "./experience-items/cs2030TA";
 import ExperienceCard from "./components/experience-card";
 
 const experiences = [DSTA, Shopee, RDC, Frank, IRAS, CS2030STA, CS2030TA];
 
-export default function Portfolio({ portfolioSectionRef }) {
+export default function Experiences({ experiencesSectionRef }) {
   return (
-    <div ref={portfolioSectionRef} className={styles.portfolio} id="portfolio">
+    <div
+      ref={experiencesSectionRef}
+      className={styles.experiences}
+      id="experiences"
+    >
       <div className={styles["title-holder"]}>
         <Divider />
         <h2 className={styles.title}>Experiences</h2>

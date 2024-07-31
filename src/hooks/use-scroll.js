@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 export default function useScroll() {
   const aboutSectionRef = useRef(null);
-  const portfolioSectionRef = useRef(null);
+  const experiencesSectionRef = useRef(null);
 
   const scrollIntoSection = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -12,14 +12,14 @@ export default function useScroll() {
     scrollIntoSection(aboutSectionRef);
   };
 
-  const scrollIntoPortfolioSection = () => {
-    scrollIntoSection(portfolioSectionRef);
+  const scrollIntoExperiencesSection = () => {
+    scrollIntoSection(experiencesSectionRef);
   };
 
   return {
     aboutSectionRef,
-    portfolioSectionRef,
+    experiencesSectionRef,
     scrollIntoAboutSection,
-    scrollIntoPortfolioSection,
+    scrollIntoExperiencesSection,
   };
 }

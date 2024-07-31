@@ -5,7 +5,10 @@ import useAnimationAvatar from "./hooks/use-animation-avatar";
 import Divider from "components/divider";
 import ThemedButton from "components/themed-button";
 
-export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
+export default function About({
+  aboutSectionRef,
+  scrollIntoExperiencesSection,
+}) {
   const hasTilt = true;
   const hasSpin = false;
   useAnimationAvatar(hasTilt, hasSpin);
@@ -24,7 +27,10 @@ export default function About({ aboutSectionRef, scrollIntoPortfolioSection }) {
             and I love to work on fun stuff. Check out my experiences and
             projects below!
           </p>
-          <ThemedButton onClick={scrollIntoPortfolioSection} size={"medium"} />
+          <ThemedButton
+            onClick={scrollIntoExperiencesSection}
+            size={"medium"}
+          />
         </div>
         <div id="avatarHolder" className={styles["avatar-container"]}>
           <img src={dp} id="avatar" alt="Avatar" className={styles.avatar} />

@@ -1,17 +1,18 @@
 import styles from "./App.module.scss";
 import Home from "sections/home";
 import About from "sections/about";
-import Portfolio from "sections/portfolio";
-import useScroll from "hooks/use-scroll";
+import Experiences from "sections/experiences";
 import Projects from "sections/projects";
 import Footer from "sections/footer";
+
+import useScroll from "hooks/use-scroll";
 
 function App() {
   const {
     aboutSectionRef,
+    experiencesSectionRef,
     scrollIntoAboutSection,
-    scrollIntoPortfolioSection,
-    portfolioSectionRef,
+    scrollIntoExperiencesSection,
   } = useScroll();
 
   return (
@@ -20,9 +21,9 @@ function App() {
         <Home scrollIntoAboutSection={scrollIntoAboutSection} />
         <About
           aboutSectionRef={aboutSectionRef}
-          scrollIntoPortfolioSection={scrollIntoPortfolioSection}
+          scrollIntoExperiencesSection={scrollIntoExperiencesSection}
         />
-        <Portfolio portfolioSectionRef={portfolioSectionRef} />
+        <Experiences experiencesSectionRef={experiencesSectionRef} />
         <Projects />
         <Footer />
       </div>

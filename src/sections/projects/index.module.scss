@@ -19,13 +19,3 @@
   font-size: $heading-medium;
   color: $text-light;
 }
-
-.portfolio-wheel-holder {
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  height: 60vh;
-  overflow-y: auto;
-}
