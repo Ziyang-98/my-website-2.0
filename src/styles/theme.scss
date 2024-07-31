@@ -22,7 +22,8 @@ $title-width: 70%;
 @mixin section-header-styles {
   width: 70%;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
+    width: 80%;
     font-size: $text-very-small;
   }
 }
