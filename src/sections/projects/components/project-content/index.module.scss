@@ -9,6 +9,9 @@
 
 .gallery-holder {
   width: 60%;
+  @media only screen and (max-width: 700px) {
+    min-height: 60%;
+  }
   display: flex;
   justify-content: center;
   align-items: center;

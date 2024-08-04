@@ -17,6 +17,10 @@
       .modal {
         width: 60%;
         height: 60%;
+        @media only screen and (max-width: 1340px) {
+          width: 90%;
+          height: 80%;
+        }
         background-color: transparent;
         animation: modalFadeIn 0.2s 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
           forwards;
