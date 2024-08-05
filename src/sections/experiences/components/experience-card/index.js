@@ -23,7 +23,6 @@ export default function ExperienceCard({
           <p className={styles["card-description"]}>{description}</p>
         </div>
 
-        {/* TODO: Add flip back functionality */}
         <div className={styles["card-back"]}>
           <h2 className={styles["card-back-title"]}>Fun Fact</h2>
           <div className={styles["card-back-divider"]} />
