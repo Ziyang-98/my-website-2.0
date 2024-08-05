@@ -10,7 +10,7 @@ const Shopee = {
     "Utilized Typescript, ReactJS and NodeJS in development",
   ],
   funFact:
-    "The pantries and cafeteria were stacked with snacks and drinks (pre-layoffs). There was a recreational area with a pool table, fooseball table and a massage room too!",
+    "The pantries and cafeteria were stacked with snacks and drinks like a shop when I interned there. There was a recreational area with a pool table, foosball table and a massage room too!",
 };
 
 export default Shopee;

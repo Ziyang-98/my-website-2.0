@@ -8,7 +8,7 @@ const Frank = {
     "Worked with RESTful & GraphQL API services",
   ],
   funFact:
-    "The office was small but it was designed with street art with graffiti murals all over the place!",
+    "The office was really small but it was designed with street art with graffiti murals all over the place, very cool!",
 };
 
 export default Frank;

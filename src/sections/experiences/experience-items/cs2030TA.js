@@ -10,7 +10,7 @@ const CS2030STA = {
     "Built students' proficiency in Java",
   ],
   funFact:
-    "My first time tutoring :O It was hard work and long hours but seeing students excel is something I am very proud of!",
+    "My first time tutoring. It was hard work and long hours but seeing students excel is something I am very proud of!",
 };
 
 export default CS2030STA;
