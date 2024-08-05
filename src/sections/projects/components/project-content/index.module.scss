@@ -75,6 +75,7 @@
 .details-description {
   @include details-content-width;
   text-align: justify;
+  white-space: pre-line;
 }
 
 .details-section-header {
