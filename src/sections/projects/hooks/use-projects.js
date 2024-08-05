@@ -7,8 +7,10 @@ import Coffeeberry from "../project-items/coffeeberry";
 import CommonCents from "../project-items/common-cents";
 import Bob from "../project-items/bob";
 import Modplanner from "../project-items/mod-planner";
+import Flowforge from "../project-items/flowforge";
 
 const projects = [
+  Flowforge,
   PeerPrep,
   JobTrack,
   CoralReefConservation,
