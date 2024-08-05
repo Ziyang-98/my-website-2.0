@@ -55,6 +55,12 @@ function Carousel({ children, width, height }) {
     };
   });
 
+  const supportsFullScreen =
+    document.fullscreenEnabled ||
+    document.webkitFullscreenEnabled ||
+    document.mozFullScreenEnabled ||
+    document.msFullscreenEnabled;
+
   const handleFullscreenButtonClick = () => {
     if (document.fullscreenElement === null) {
       const carouselDisplayElement =
@@ -117,28 +123,30 @@ function Carousel({ children, width, height }) {
           return React.cloneElement(child, { height: "100%", width: "100%" });
         })}
       </div>
-      <button
-        className={styles["fullscreen-button"]}
-        onClick={handleFullscreenButtonClick}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-maximize"
+      {supportsFullScreen && (
+        <button
+          className={styles["fullscreen-button"]}
+          onClick={handleFullscreenButtonClick}
         >
-          <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-          <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-          <path d="M3 16v3a2 2 0 0 0 2 2h3" />
-          <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-maximize"
+          >
+            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+          </svg>
+        </button>
+      )}
       <div
         className={styles["carousel-left-btn-holder"]}
         onClick={() => updateIndex(activeIndex - 1)}
