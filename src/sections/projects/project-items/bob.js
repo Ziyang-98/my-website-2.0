@@ -9,18 +9,8 @@ const Bob = {
   shortDescription:
     "A Java bot app that allows users to manages tasks, events and deadlines.",
   image: {
-    logo: null,
     preview: BobPreview,
     showcases: [{ image: BobShowcase, title: "Bob's UI" }],
-  },
-  previewSize: {
-    width: "60%",
-    height: "50%",
-  },
-  showcaseSizes: {
-    large: { width: "400px", height: "600px" },
-    medium: { width: "400px", height: "600px" },
-    small: { width: "300px", height: "500px" },
   },
   description:
     "Bob is a command-line based bot that keeps track of the user's tasks, events " +

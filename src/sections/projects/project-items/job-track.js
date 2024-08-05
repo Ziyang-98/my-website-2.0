@@ -12,15 +12,6 @@ const JobTrack = {
     preview: JobTrackLogo,
     showcases: [{ image: JobTrackShowcase, title: "Main Page" }],
   },
-  previewSize: {
-    width: "40%",
-    height: "50%",
-  },
-  showcaseSizes: {
-    large: { width: 1000, height: 500 },
-    medium: { width: 600, height: 300 },
-    small: { width: 400, height: 200 },
-  },
   description:
     "Job Track is an Single-Page Application that is created using the MERN stack. The app helps users to " +
     "track their job applications with ease by allows them to record information for their job applications." +

@@ -17,7 +17,6 @@ const CoralReefConservation = {
   shortDescription:
     "A Coral Reef species library with filtering and priorization for Coral Transplantation.",
   image: {
-    logo: null,
     preview: CoralReefPreview,
     showcases: [
       { image: LandingPageImg, title: "Landing Page" },
@@ -30,16 +29,6 @@ const CoralReefConservation = {
       { image: EditSpeciesImg, title: "Admin Update Specimen Page" },
     ],
   },
-  previewSize: {
-    width: "100%",
-    height: "40%",
-  },
-  showcaseSizes: {
-    large: { width: 650, height: 470 },
-    medium: { width: 500, height: 360 },
-    small: { width: 320, height: 230 },
-  },
-
   description:
     "Coral Reef Conservation is an app that is designed using ReactJS as its front-end framework and Firebase for the database and user authentication / authorization. " +
     "The app is designed to ease the transplantation process of corals by guiding users using appropriate criterias produced by the Reef Ecology Lab, NUS. " +

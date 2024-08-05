@@ -9,20 +9,9 @@ const CommonCents = {
   shortDescription:
     "A Java app for small business owners to manage financial transactions and earnings.",
   image: {
-    logo: null,
     preview: CommonCentsPreview,
     showcases: [{ image: CommonCentsShowcase, title: "Common Cent's UI" }],
   },
-  previewSize: {
-    width: "40%",
-    height: "50%",
-  },
-  showcaseSizes: {
-    large: { width: 600, height: 400 },
-    medium: { width: 500, height: 350 },
-    small: { width: 320, height: 210 },
-  },
-
   description:
     "Common Cents is a command-line based app that aims to assist small business owners. " +
     "It allows the small business owners to keep track of their expenses as well as revenues " +

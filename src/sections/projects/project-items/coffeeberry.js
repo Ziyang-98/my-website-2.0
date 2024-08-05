@@ -14,7 +14,6 @@ const Coffeeberry = {
   shortDescription:
     "A web e-commerce app that connects coffee bean suppliers and coffee bean buyers.",
   image: {
-    logo: null,
     preview: CoffeeberryLogo,
     showcases: [
       { image: HomePageImg, title: "Home Page" },
@@ -25,16 +24,6 @@ const Coffeeberry = {
       { image: CreatePostingImg, title: "Create Posting Page" },
     ],
   },
-  previewSize: {
-    width: "40%",
-    height: "50%",
-  },
-  showcaseSizes: {
-    large: { width: 630, height: 470 },
-    medium: { width: 500, height: 370 },
-    small: { width: 320, height: 240 },
-  },
-
   description:
     "Coffeeberry is an online market for coffee bean suppliers to post their goods for sale, " +
     "and for buyers to search for the type of coffee beans they want. It serves as a an E-commerce " +

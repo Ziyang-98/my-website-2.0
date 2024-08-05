@@ -30,15 +30,6 @@ const Modplanner = {
       { image: CreateQuestionImg, title: "Create Question Page" },
     ],
   },
-  previewSize: {
-    width: "100%",
-    height: "35%",
-  },
-  showcaseSizes: {
-    large: { width: 800, height: 570 },
-    medium: { width: 500, height: 360 },
-    small: { width: 350, height: 250 },
-  },
   description:
     "The Mod Planner is an app that is designed using the MERN stack. The app allows NUS students to " +
     "plan their university modules, share their planners as guides, " +

@@ -20,7 +20,6 @@ const PeerPrep = {
   shortDescription:
     "A web app that simulates real-time collaborative coding interviews.",
   image: {
-    logo: null,
     preview: PeerPrepLogo,
     showcases: [
       { image: LoginPageImg, title: "Login Page" },
@@ -40,16 +39,6 @@ const PeerPrep = {
       { image: ProfilePageImg, title: "Profie Management Page" },
     ],
   },
-  previewSize: {
-    width: "40%",
-    height: "50%",
-  },
-  showcaseSizes: {
-    large: { width: 900, height: 450 },
-    medium: { width: 600, height: 300 },
-    small: { width: 320, height: 160 },
-  },
-
   description:
     "PeerPrep is a web application that is developed using the MERN stack. The app follows a microservice architecture which uses a Redis cache and is managed by Docker. " +
     "The project aims to help students ace their coding interviews through peer reviews, peer mock interviews and collaborative coding. " +
