@@ -1,12 +1,12 @@
 import { useState } from "react";
 import modalStyles from "../components/modal/index.module.scss";
-import PeerPrep from "../project-items/PeerPrep";
-import JobTrack from "../project-items/JobTrack";
-import CoralReefConservation from "../project-items/CoralReefConservation";
-import Coffeeberry from "../project-items/Coffeeberry";
-import CommonCents from "../project-items/CommonCents";
-import Bob from "../project-items/Bob";
-import Modplanner from "../project-items/Modplanner";
+import PeerPrep from "../project-items/peer-prep";
+import JobTrack from "../project-items/job-track";
+import CoralReefConservation from "../project-items/coral-reef-conservation";
+import Coffeeberry from "../project-items/coffeeberry";
+import CommonCents from "../project-items/common-cents";
+import Bob from "../project-items/bob";
+import Modplanner from "../project-items/mod-planner";
 
 const projects = [
   PeerPrep,
