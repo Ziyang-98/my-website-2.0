@@ -12,11 +12,9 @@ const CommonCents = {
     preview: CommonCentsPreview,
     showcases: [{ image: CommonCentsShowcase, title: "Common Cent's UI" }],
   },
-  description:
-    "Common Cents is a command-line based app that aims to assist small business owners. " +
-    "It allows the small business owners to keep track of their expenses as well as revenues " +
-    "with simple command inputs. This brownfield team project is based " +
-    "on a software engineering module, CS2103T, in NUS.",
+  description: `Common Cents is a command-based app that aims to assist small business owners. It helps the small business owners keep track of their expenses and revenues with simple command inputs.
+  
+  This brownfield team project is based on a software engineering module (CS2103T) in NUS .`,
   roles: [
     "Team Lead: Led the overall direction and development of the project",
     "Designed and implemented the model structure of the application",

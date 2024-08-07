@@ -30,12 +30,9 @@ const Modplanner = {
       { image: CreateQuestionImg, title: "Create Question Page" },
     ],
   },
-  description:
-    "The Mod Planner is an app that is designed using the MERN stack. The app allows NUS students to " +
-    "plan their university modules, share their planners as guides, " +
-    "and participate in an online forum to discuss about relevant topics. " +
-    "The project, handled by a team of two, aims to ease the process " +
-    "of module planning for NUS students. (Deployed app no longer active due to Heroku's paywall)",
+  description: `The Mod Planner is a web application that helps NUS students to plan their university modules, share their planners as guides, and participate in an online forum to discuss about relevant topics. The project seeks to ease the process of module planning for NUS students. 
+  
+  (Deployed app is currently inactive due to Heroku's discontinuation of their free service)`,
   roles: [
     "Designed and built the user interface with ReactJS",
     "Added web hooks in the server to push or get data from the MongoDB database",

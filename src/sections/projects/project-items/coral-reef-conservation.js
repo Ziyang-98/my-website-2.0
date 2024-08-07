@@ -29,10 +29,9 @@ const CoralReefConservation = {
       { image: EditSpeciesImg, title: "Admin Update Specimen Page" },
     ],
   },
-  description:
-    "Coral Reef Conservation is an app that is designed using ReactJS as its front-end framework and Firebase for the database and user authentication / authorization. " +
-    "The app is designed to ease the transplantation process of corals by guiding users using appropriate criterias produced by the Reef Ecology Lab, NUS. " +
-    "The app also comes with an administrative system for the marine biologists in Reef Ecology Lab to upload data easily to the library available.",
+  description: `Coral Reef Conservation is an app that is designed to ease the transplantation process of corals by educating users on the appropriate criterias produced by the Reef Ecology Lab, NUS.
+    
+    The app also comes with a data management system for the marine biologists in Reef Ecology Lab to update the information in the app.`,
   roles: [
     "Designed the user interface and the model schemas of the database",
     "Developed the user interface of the results page with ReactJS",

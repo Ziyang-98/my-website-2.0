@@ -12,10 +12,7 @@ const JobTrack = {
     preview: JobTrackLogo,
     showcases: [{ image: JobTrackShowcase, title: "Main Page" }],
   },
-  description:
-    "Job Track is an Single-Page Application that is created using the MERN stack. The app helps users to " +
-    "track their job applications with ease by allows them to record information for their job applications." +
-    "Users are able to quickly import their job track information across multiple browser platforms as well.",
+  description: `Job Track is an Single-Page Application that helps users to track their job applications with ease. Instead of using the traditional sheets, users can quickly view, record and update job applications via a minimalistic drag-and-drop interface. Users can sync their data across multiple browsers/device so that job tracking can be performed anywhere with any device.`,
   roles: [
     "Designed and built the user interface with ReactJS",
     "Built the server with NodeJS, ExpressJS with MongoDB as the database",

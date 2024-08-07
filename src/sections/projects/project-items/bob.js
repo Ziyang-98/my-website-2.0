@@ -12,11 +12,9 @@ const Bob = {
     preview: BobPreview,
     showcases: [{ image: BobShowcase, title: "Bob's UI" }],
   },
-  description:
-    "Bob is a command-line based bot that keeps track of the user's tasks, events " +
-    "and deadlines through conversations. Features include a variety of commands that " +
-    "allow users to manage their tasks in an optimal environment for CLI. " +
-    "This greenfield individual project is based on a software engineering module, CS2103T, in NUS.",
+  description: `Bob is a command-based chat bot that keeps track of the user's tasks, events and deadlines through conversations. The chat bot features a variety of commands that allow users to manage their tasks in an optimal environment for CLI.
+
+    This greenfield individual project is based on a software engineering module, CS2103T, in NUS.`,
   roles: ["Designed, developed and integrated the application"],
   links: [
     {

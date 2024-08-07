@@ -35,9 +35,7 @@ const Flowforge = {
       { image: OrganizationSettingsPageImg, title: "Organization Settings" },
     ],
   },
-  description: `Flowforge is a minimalistic web application that is built with NextJS and Golang.
-
-  As a service request management system, Flowforge project aims to help teams or organizations with little developer resources to easily create service pipelines and automate service request fulfilment.
+  description: `Flowforge is a minimalistic web application that serves as a service request management system. The project aims to help teams or organizations with little developer resources to easily create service pipelines and automate service request fulfilment.
   
   Features of Flowforge includes: 
   - Simplified Pipeline & Form Creation
