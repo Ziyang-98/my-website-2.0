@@ -1,4 +1,13 @@
 import FlowforgePreview from "assets/projects/flowforge/flowforgepreview.png";
+import LoginPageImg from "assets/projects/flowforge/loginpage.png";
+import FirstTimeUserPopupImg from "assets/projects/flowforge/firsttimeuserpopup.png";
+import SelectOrganizationPageImg from "assets/projects/flowforge/selectorganizationpage.png";
+import ServiceCatalogPageImg from "assets/projects/flowforge/servicecatalogpage.png";
+import CreateServicePageImg from "assets/projects/flowforge/createservicepage.png";
+import CreateServiceRequestImg from "assets/projects/flowforge/createservicerequestpage.png";
+import ServiceRequestDashboardPageImg from "assets/projects/flowforge/servicerequestdashboardpage.png";
+import ServiceRequestLogsPageImg from "assets/projects/flowforge/servicerequestlogspage.png";
+import OrganizationSettingsPageImg from "assets/projects/flowforge/organizationsettingspage.png";
 
 import TypescriptIcon from "assets/logos/language/typescript.png";
 import TailwindCSSIcon from "assets/logos/framework/tailwindcss.png";
@@ -11,9 +20,22 @@ const Flowforge = {
     "A flexible service request management system for organizations with minimal resources.",
   image: {
     preview: FlowforgePreview,
-    showcases: [],
+    showcases: [
+      { image: LoginPageImg, title: "Login Page" },
+      { image: FirstTimeUserPopupImg, title: "First Time User Popup" },
+      { image: SelectOrganizationPageImg, title: "Select Organization Page" },
+      { image: ServiceCatalogPageImg, title: "Service Catalog Page" },
+      { image: CreateServicePageImg, title: "Create Service Page" },
+      { image: CreateServiceRequestImg, title: "Create Service Request" },
+      {
+        image: ServiceRequestDashboardPageImg,
+        title: "Service Request Dashboard",
+      },
+      { image: ServiceRequestLogsPageImg, title: "Service Request Logs" },
+      { image: OrganizationSettingsPageImg, title: "Organization Settings" },
+    ],
   },
-  description: `Flowforge is a web application that is built with NextJS and Golang.
+  description: `Flowforge is a minimalistic web application that is built with NextJS and Golang.
 
   As a service request management system, Flowforge project aims to help teams or organizations with little developer resources to easily create service pipelines and automate service request fulfilment.
   
