@@ -42,18 +42,18 @@ function Carousel({ children, width, height }) {
     setActiveIndex(newIndex);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!paused) {
-        updateIndex(activeIndex + 1);
-      }
-    }, 3000);
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  });
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (!paused) {
+  //       updateIndex(activeIndex + 1);
+  //     }
+  //   }, 3000);
+  //   return () => {
+  //     if (interval) {
+  //       clearInterval(interval);
+  //     }
+  //   };
+  // });
 
   const supportsFullScreen =
     document.fullscreenEnabled ||
