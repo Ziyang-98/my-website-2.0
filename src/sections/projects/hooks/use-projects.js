@@ -11,8 +11,8 @@ import Flowforge from "../project-items/flowforge";
 
 const projects = [
   Flowforge,
-  PeerPrep,
   JobTrack,
+  PeerPrep,
   CoralReefConservation,
   Coffeeberry,
   CommonCents,
