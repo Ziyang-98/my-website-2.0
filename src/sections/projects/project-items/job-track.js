@@ -25,7 +25,7 @@ const JobTrack = {
     },
     {
       name: "Repository",
-      link: "https://github.com/Ziyang-98/job-tracker",
+      link: "https://github.com/Ziyang-98/job-track",
     },
   ],
   techStack: [
