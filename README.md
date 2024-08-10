@@ -1,8 +1,8 @@
-# My Personal Portfolio Website
+# My Personal Portfolio Website 2.0
 
 This site is built purely with React, Sass and Javascript.
 
-Check my previous website built with Material UI [here](https://limziyang-24f60.web.app/)!
+Check my previous website built with Material UI [here](https://github.com/Ziyang-98/My-website)!
 
 ## Motivation
 
