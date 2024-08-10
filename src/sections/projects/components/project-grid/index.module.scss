@@ -4,25 +4,8 @@
   display: inline-grid;
   justify-content: center;
   justify-items: center;
-  // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
-
   row-gap: 10vh;
   width: 60%;
-}
-
-.close-button {
-  position: absolute;
-  right: 5px;
-  background-color: transparent;
-  border: none;
-  color: $accent-light;
-  cursor: pointer;
-  width: 36px;
-  height: 36px;
-
-  &:hover {
-    background-color: rgb(226, 226, 226);
-    border-radius: 50%;
-  }
+  height: auto;
 }
