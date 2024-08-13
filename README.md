@@ -10,7 +10,7 @@ I decided that as a challenge, I won't rely on any external libraries for the co
 
 Throughout the project, I've learned to make complex components such as carousels, tooltips and modals. I've also learned to build layouts with CSS Grid, CSS animations and transitions, build responsive web views with media querying and many more concepts in the vast field of web development.
 
-As a result, I created a nice portfolio website with cool animations that I would have used libraries to implement in the past (and I am so proud that I didn't!). More importantly, I gained a profound appreciation of how plain old Javascript, HTML and CSS work together to create composite UI systems. Overall, this has fueled my interest to gain a better understanding of web development at its core, and with a stronger foundation, I can look forward to creating complex and performant systems in the future.
+As a result, I created a nice portfolio website with cool animations that I would have used libraries to implement in the past (and I am proud of myself for not using them!). More importantly, I gained a profound appreciation of how plain old Javascript, HTML and CSS work together to create composite UI systems. Overall, this has fueled my interest to gain a better understanding of web development at its core, and with a stronger foundation, I can look forward to creating complex and performant systems in the future.
 
 Of course, this is not the end of development for this website. I plan to add more features, improve the site and make more cool stuff as I get more inspirations, so stay tuned!
 
