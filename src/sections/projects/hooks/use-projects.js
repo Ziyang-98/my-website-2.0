@@ -10,8 +10,8 @@ import Modplanner from "../project-items/mod-planner";
 import Flowforge from "../project-items/flowforge";
 
 const projects = [
-  Flowforge,
   JobTrack,
+  Flowforge,
   PeerPrep,
   CoralReefConservation,
   Coffeeberry,

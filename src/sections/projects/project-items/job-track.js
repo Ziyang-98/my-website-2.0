@@ -1,4 +1,4 @@
-import JobTrackShowcase from "assets/projects/jobtrack/jobtrackshowcase.PNG";
+import JobTrackShowcase from "assets/projects/jobtrack/jobtrackshowcase.png";
 import JobTrackLogo from "assets/projects/jobtrack/jobtracklogo.png";
 import JavascriptIcon from "assets/logos/language/javascript.png";
 import ReactIcon from "assets/logos/framework/react.png";
@@ -14,9 +14,8 @@ const JobTrack = {
   },
   description: `Job Track is an Single-Page Application that helps users to track their job applications with ease. Instead of using the traditional sheets, users can quickly view, record and update job applications via a minimalistic drag-and-drop interface. Users can sync their data across multiple browsers/device so that job tracking can be performed anywhere with any device.`,
   roles: [
-    "Designed and built the user interface with ReactJS",
+    "Designed and built the user interface with ReactJS and Material UI",
     "Built the server with NodeJS, ExpressJS with MongoDB as the database",
-    "Implemented CI/CD and a serverless function to pull filtered and cleaned API data",
   ],
   links: [
     {
