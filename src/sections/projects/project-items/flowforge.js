@@ -54,10 +54,10 @@ const Flowforge = {
     },
   ],
   techStack: [
-    { name: "Typescript", img: TypescriptIcon },
-    { name: "NextJs", img: NextJSIcon },
-    { name: "TailwindCSS", img: TailwindCSSIcon },
-    { name: "Golang", img: GolangIcon },
+    { name: "TypeScript", img: TypescriptIcon },
+    { name: "Next.js", img: NextJSIcon },
+    { name: "Tailwind CSS", img: TailwindCSSIcon },
+    { name: "Go", img: GolangIcon },
   ],
 };
 

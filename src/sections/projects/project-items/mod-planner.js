@@ -44,9 +44,9 @@ const Modplanner = {
     },
   ],
   techStack: [
-    { name: "Javascript", img: JavascriptIcon },
-    { name: "ReactJS", img: ReactIcon },
-    { name: "NodeJS", img: NodejsIcon },
+    { name: "JavaScript", img: JavascriptIcon },
+    { name: "React", img: ReactIcon },
+    { name: "Node.js", img: NodejsIcon },
     { name: "MongoDB", img: MongoDbIcon },
   ],
 };

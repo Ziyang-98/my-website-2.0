@@ -44,8 +44,8 @@ const CoralReefConservation = {
     },
   ],
   techStack: [
-    { name: "Javascript", img: JavascriptIcon },
-    { name: "ReactJS", img: ReactIcon },
+    { name: "JavaScript", img: JavascriptIcon },
+    { name: "React", img: ReactIcon },
     { name: "Firebase", img: FirebaseIcon },
   ],
 };
