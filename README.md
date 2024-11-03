@@ -6,13 +6,13 @@ Check my previous website built with Material UI [here](https://github.com/Ziyan
 
 ## Motivation
 
-As trivial as it sounds, I wanted challenge myself by not relying on any external libraries for the components and styling of the new website. Considering how I "abused" frontend libraries without knowing how they work, I wanted to learn basic web development through developing my own components and styling. Of course, this website is not developed is not pure Javascript, HTML and CSS and I am still using React framework that abstracts away much of web development and a CSS pre-processor (Sass) with additional functionalities. However, I wanted to focus on improving my styling and component building skills, and shift from using heavy frameworks like MUI or TailwindCSS. Hence React and Sass are here to make things easier when handling state management, complex javascript executions and defining CSS variables.
+Considering how I ignorantly "abused" frontend libraries without knowing how they work, I wanted to learn basic web development through developing my own components and styling with React and CSS. Of course, this website is not developed is not pure JavaScript, HTML and CSS and I am still using React framework that abstracts away much of web development and a CSS pre-processor (Sass) with additional functionalities. However, I wanted to focus on improving my styling and component building skills, and shift from using heavy frameworks like MUI or TailwindCSS. Hence these frameworks help to make things easier when handling state management, complex javascript executions and defining CSS variables.
 
-Throughout the project, I've learned to design complex components such as carousels, tooltips and modals. I've also learned to build layouts with CSS Grid, CSS animations and transitions, responsive web views with media querying and many other features.
+Throughout the project, I've learned to design complex components such as carousels, tooltips and modals. I've also learned to create layouts with CSS Grid, CSS animations and transitions, responsive web views with media querying and many other features.
 
-At the end of the release, I come to appreciate how Javascript, HTML and CSS work together to create composite UI systems. Unironically, the process motivated me to explore more beneath all those pretty and complex React/Javascript libraries out there. This has helped to rebuild my foundation in frontend development so that I can create complex and performant systems in the future.
+I come to appreciate how Javascript, HTML and CSS work together to creatse composite UI systems. Unironically, the process pushed me to explore under all those pretty and complex React/Javascript libraries out there. This has helped to rebuild my foundation in frontend development so that I can create complex and performant components in the future.
 
-Of course, this is not the end for this website. I plan to add more features, improve the site and make more cool stuff as I get inspirations, so stay tuned!
+Oh and this isn't the end yet! I plan to add more features, improve the site and make more cool stuff as I get inspirations, so stay tuned!
 
 ## Key References
 
