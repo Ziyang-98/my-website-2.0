@@ -6,13 +6,13 @@ Check my previous website built with Material UI [here](https://github.com/Ziyan
 
 ## Motivation
 
-Considering how I ignorantly "abused" frontend libraries without knowing how they work, I wanted to learn basic web development through developing my own components and styling with React and CSS. Of course, this website is not developed is not pure JavaScript, HTML and CSS and I am still using React framework that abstracts away much of web development and a CSS pre-processor (Sass) with additional functionalities. However, I wanted to focus on improving my styling and component building skills, and shift from using heavy frameworks like MUI or TailwindCSS. Hence these frameworks help to make things easier when handling state management, complex javascript executions and defining CSS variables.
+Considering how I "abused" frontend libraries without knowing how they work, I wanted to learn basic web development through developing my own components and styling with React and CSS. Of course, this website is not developed is not pure JavaScript, HTML and CSS and I am still using React framework and a CSS pre-processor (Sass) with additional functionalities. However, my goal was to focus on improving my styling and component building skills, and shift from using heavy frameworks like Material UI. Hence React and Sass are here to make things easier when handling state management, complex javascript executions and defining CSS variables/mixins.
 
 Throughout the project, I've learned to design complex components such as carousels, tooltips and modals. I've also learned to create layouts with CSS Grid, CSS animations and transitions, responsive web views with media querying and many other features.
 
-I come to appreciate how Javascript, HTML and CSS work together to creatse composite UI systems. Unironically, the process pushed me to explore under all those pretty and complex React/Javascript libraries out there. This has helped to rebuild my foundation in frontend development so that I can create complex and performant components in the future.
+I've come to appreciate how Javascript, HTML and CSS work together to create composite UI systems. Unironically, the process motivated me to explore under all those pretty and complex React/Javascript libraries out there. This has helped to rebuild my foundation in frontend development so that I can create complex and performant components in the future.
 
-Oh and this isn't the end yet! I plan to add more features, improve the site and make more cool stuff as I get inspirations, so stay tuned!
+Oh this isn't the end yet! I plan to add more features, improve the site and make more cool stuff as I get inspirations, so stay tuned! :)
 
 ## Key References
 
