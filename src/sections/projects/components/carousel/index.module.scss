@@ -66,7 +66,7 @@
 
 .carousel-indicator {
   @extend %carousel-indicator-base;
-  background: #408081;
+  background: $primary-light;
 }
 
 .carousel-indicator-active {
@@ -74,7 +74,7 @@
   background: $accent-light;
 }
 
-%carousel-btn-holder {
+%carousel-btn {
   position: absolute;
   height: 100%;
   display: flex;
@@ -89,24 +89,24 @@
 }
 
 .carousel-left-btn-holder {
-  @extend %carousel-btn-holder;
+  @extend %carousel-btn;
   left: 0;
   &:hover {
     .carousel-btn-holder {
       transform: translateX(-5px);
-      background-color: $secondary-light;
+      background-color: rgba($color: $secondary-light, $alpha: 0.6);
     }
   }
 }
 
 .carousel-right-btn-holder {
-  @extend %carousel-btn-holder;
+  @extend %carousel-btn;
   right: 0;
 
   &:hover {
     .carousel-btn-holder {
       transform: translateX(5px);
-      background-color: $secondary-light;
+      background-color: rgba($color: $secondary-light, $alpha: 0.6);
     }
   }
 }
@@ -118,6 +118,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 10%;
   transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 
