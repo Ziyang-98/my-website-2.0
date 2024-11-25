@@ -3,18 +3,17 @@
 @mixin button($py, $px, $text-size, $letter-spacing) {
   font-family: "Sora", sans-serif;
   font-size: $text-size;
-  background-color: $primary-light;
+  background-color: $accent-light;
   color: $foreground-text-light;
   letter-spacing: $letter-spacing;
   display: inline-block;
   padding: $py $px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.5s ease; /* Add a smooth transition on hover */
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
 
   &:hover {
-    background-color: $accent-light;
-    animation: jello-horizontal 0.8s both;
+    background-color: $primary-light;
   }
 }
 

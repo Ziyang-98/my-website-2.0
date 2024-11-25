@@ -12,9 +12,9 @@ export default function ThemedButton({
   return (
     <button
       onClick={onClick}
-      className={`${styles[size]} ${
-        isRounded ? styles.rounded : ""
-      } ${className}`}
+      className={[styles[size], isRounded ? styles.rounded : "", className]
+        .filter(Boolean)
+        .join(" ")}
     >
       {children ?? text}
     </button>

@@ -20,7 +20,6 @@ export default function ProjectGrid() {
       <Modal closeModal={closeCard} enableCloseButton>
         {isModalActive && <ProjectContent project={currentProject} />}
       </Modal>
-
       {projects.map((project, i) => (
         <ProjectCard
           key={i}

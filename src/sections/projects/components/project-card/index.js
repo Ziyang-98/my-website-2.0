@@ -25,6 +25,7 @@ export default function ProjectCard({ isExpanded, project, expandCard }) {
           }}
           size={"small"}
           text="Learn More"
+          animated={false}
           className={styles["project-card-button"]}
         />
       </div>

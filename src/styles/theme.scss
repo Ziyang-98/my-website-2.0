@@ -1,10 +1,10 @@
-$primary-light: #54a4a5;
+$primary-light: #3b7e80;
 $secondary-light: #6fbbbb;
 $accent-light: #005365;
 
 $text-light: #333;
 $foreground-text-light: #fff;
-$gray-text-light: #8c9bb6;
+$gray-text-light: #788499;
 
 $text-very-small: 0.8em;
 $text-small: 1.1em;
@@ -28,27 +28,7 @@ $title-width: 70%;
   }
 }
 
-// $primary-foreground-light: #ffffff;
-// $secondary-foreground-light: #333333;
-// $text-light: #314163;
-// $subtext-light: #828894;
-// $background-secondary-light: #ededef;
-
 $bg-svg: url("../assets/bg/bg-cropped.svg");
-
-// @font-face {
-//   font-family: "Sora";
-//   src: url("../assets/fonts/Sora-Thin.ttf") format("truetype");
-//   font-weight: 100;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Sora";
-//   src: url("../assets/fonts/Sora-ExtraLight.ttf") format("truetype");
-//   font-weight: 200;
-//   font-style: normal;
-// }
 
 @font-face {
   font-family: "Sora";
@@ -70,31 +50,3 @@ $bg-svg: url("../assets/bg/bg-cropped.svg");
   font-weight: 500;
   font-style: bold;
 }
-
-// @font-face {
-//   font-family: "Sora";
-//   src: url("../assets/fonts/Sora-SemiBold.ttf") format("truetype");
-//   font-weight: 600;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Sora";
-//   src: url("../assets/fonts/Sora-Bold.ttf") format("truetype");
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Sora";
-//   src: url("../assets/fonts/Sora-ExtraBold.ttf") format("truetype");
-//   font-weight: 800;
-//   font-style: normal;
-// }
-
-// $primary-dark:
-// $primary-foreground-dark:
-// $secondary-dark
-// $secondary-foreground-dark
-// $subtext-dark:
-// $text-dark:
