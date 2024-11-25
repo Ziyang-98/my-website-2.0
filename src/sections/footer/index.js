@@ -9,7 +9,7 @@ export default function Footer() {
     <div className={styles["footer-section"]}>
       <div className={styles["social-media-holder"]}>
         <h1 className={styles["social-media-name"]}>Lim Zi Yang</h1>
-        <h4>limziyang8@gmail.com</h4>
+        <h3>limziyang8@gmail.com</h3>
         <div className={styles["social-media-icons-holder"]}>
           <ThemedLinkButton url="https://www.facebook.com/lim.ziyang.12">
             <svg
