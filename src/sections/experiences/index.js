@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
 import Divider from "components/divider";
+import Airwallex from "./experience-items/airwallex";
 import Shopee from "./experience-items/shopee";
 import DSTA from "./experience-items/dsta";
 import RDC from "./experience-items/rdc";
@@ -10,7 +11,16 @@ import CS2030STA from "./experience-items/cs2030sTA";
 import CS2030TA from "./experience-items/cs2030TA";
 import ExperienceCard from "./components/experience-card";
 
-const experiences = [DSTA, Shopee, RDC, Frank, IRAS, CS2030STA, CS2030TA];
+const experiences = [
+  Airwallex,
+  DSTA,
+  Shopee,
+  RDC,
+  Frank,
+  IRAS,
+  CS2030STA,
+  CS2030TA,
+];
 
 export default function Experiences({ experiencesSectionRef }) {
   return (
