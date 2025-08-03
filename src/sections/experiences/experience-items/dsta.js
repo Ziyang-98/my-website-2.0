@@ -1,7 +1,7 @@
 const DSTA = {
   jobTitle: "Software Engineer",
   company: "Defense Science and Technology Agency (DSTA) Singapore",
-  duration: "July 2023 - March 2024",
+  duration: "Jul 2023 - Mar 2025",
   description:
     "Developing common frontend and backend libraries for DSTA projects as a Full-Stack Engineer under Enterprise Digital Services",
   jobscope: [

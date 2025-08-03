@@ -1,7 +1,7 @@
 const Frank = {
   jobTitle: "Software Engineer Intern",
   company: "Frank by OCBC",
-  duration: "May 2021 - July 2021",
+  duration: "May 2021 - Jul 2021",
   description:
     "Developed microservice features related to stock search and fact sheets for OCBC Digital App as a Back-End Engineer under the OCBC@STEM Programme",
   jobscope: [
